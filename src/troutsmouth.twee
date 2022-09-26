@@ -1,0 +1,38 @@
+:: StoryData
+{
+    "ifid": "CC1600F3-94FB-4AB0-8341-D4F455E681D1",
+    "format": "SugarCube",
+    "format-version": "2.36.1"
+}
+
+:: StoryTitle
+Trout's Mouth Landing
+
+:: Start
+As the ferry slows to a crawl, the view of Trout's Mouth Landing is almost too much to take in. 
+I step onto the dock. 
+Ahead of me an intersecting pathway through a fishing villiage resembling a pirate shantytown. 
+In the distance you notice a town, probably the center of Trouts mouth Landing.
+To my left, there are some steps that creep down towards the beach.
+
+[[Head towards town|totown]].
+
+[[Take the stairs to the beach.|tobeach]]
+
+:: totown
+Walking along the decaying wooden path, one particular building sticks out amongst the blighted fishing community. 
+
+:: tobeach
+The smell of stinking kelp fills my head, only getting worse as I approach the ground. 
+The tide is low enough for me to walk under the pier. Following that path with my eyes, I notice a cove formed in the cliffside.
+The opposite side of the beach is mostly barren, save for a small cabin surrounded by twenty meters of junk.
+
+[[Check out the cabin|inventor1]]
+
+[[Check out the cove|cove1]]
+
+:: inventor1
+This is the inventors shack
+
+:: cove1
+Before I could reach the cove, the tide was almost up to my knees. No way I'm going for a swim.
