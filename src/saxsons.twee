@@ -1,0 +1,51 @@
+:: saxsons
+The wooden door of the shop feels remarkably heavy, you violently yank it from its closed position.
+    
+ The door is handmade, uneven, and an entirely different type of wood from the rest of the building. It slams hard behind you, but doesn’t shut all the way. This too requires you to yank it. You hadn’t realized how loud the wind and waves were until the door is shut behind you. 
+Above, a nest of nets and ropes snake their way up into the darkness. There is a loft above you. 
+A stalky man stands behind a countertop. His long unkept beard makes him look older than he really is. Beneath the counter, meticulously arranged like pieces on a chess board, are two or three dozen hand-made fishing lures. Hanging behind the counter, arranged from left to right in descending size order, are nine craft fishing poles. You’ve never seen tools displayed to look so much like trophies.
+----
+The man behind the counter looks at me, brow furrowed.
+"Well hello, friend."
+He looks me up and down for a moment, as if trying to assure himself that I'm really standing before him.
+"What brings you to Sax and Sons?" \
+
+[[I'm looking for my father.
+
+    <<linkreplace "<u>I'm looking for my father.</u>" >> \
+        <strong>I'm looking for my father.</strong> 
+        <<type 40ms>> 
+        <em>"Your father? Does he live here in Trout’s Mouth?"</em> \
+        <</type>> \
+
+            <<linkreplace "<u>I don't know.</u>" >> \
+                <strong>"I don't know."</strong>
+                <<type 40ms>>
+                "Can’t say that narrows it down. What makes you think he’s here? Not a lot of folks still hanging around.”
+                <</type>>
+            <</linkreplace>>
+
+            <<linkreplace "I was hoping you could answer that (show photograph)">>
+            "I was hoping you could answer that (show photograph)"
+            <<type 40ms>>
+            "He looks at it for a moment, thinking. "
+            <</type>>
+            <</linkreplace>>
+    <</linkreplace>>
+
+    <<linkreplace "<u>What is this place?</u>">> \
+    <strong>What is this place?</strong>
+    <<type 40ms>> \
+    <em>“This here is Sax and Sons. 
+    I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
+    We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
+    Nets, lures, tackle, ropes and rods, all made by hand, right here on site.”</em>
+    <</type>> 
+    <</linkreplace>>
+
+
+
+
+
+Just browsing.
+

@@ -8,7 +8,12 @@
 :: StoryTitle
 Trout's Mouth Landing
 
+:: StoryMenu
+<<link "credits">> <<goto credits>> <</link>>
+
+
 :: Start
+
 As the ferry slows to a crawl, the view of Trout's Mouth Landing is almost too much to take in. 
 
 I step onto the big dock. 
@@ -19,12 +24,17 @@ In the distance you notice a town, probably the center of Trouts mouth Landing.
 
 To my left, there are some steps that creep down towards the beach.
 
+
 [[Head towards town|totown]].
 
 [[Take the stairs to the beach.|tobeach]]
 
 :: totown
 Walking along the decaying wooden path, one particular building sticks out amongst the blighted fishing community. 
+
+[[What's outside?]]
+
+[[Go inside|saxsons]]
 
 :: tobeach
 The smell of stinking kelp fills my head, only getting worse as I approach the ground. 

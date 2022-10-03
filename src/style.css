@@ -1,0 +1,15 @@
+.npctext {
+    font-size: large;
+    font-style: italic;
+}
+
+.context {
+    font-size: medium;
+    color: gray;
+}
+
+.pctext {
+    font-size:larger;
+    font-weight: bold;
+    color: white;
+}
