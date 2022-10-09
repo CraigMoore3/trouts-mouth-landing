@@ -1,7 +1,22 @@
 :: totown
 
-Walking along the decaying wooden path, one particular building sticks out amongst the blighted fishing community. 
+Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness. 
 
-[[What's outside?]]
+[[What is it?|saxext]]
 
 [[Go inside|saxsons]]
+
+[[Continue towards town|gondola]]
+
+:: saxext
+A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
+I can barely make out a flip-sign that reads “open” through the salt-caked, sand-blasted glass.
+
+[[Go inside|saxsons]]
+
+[[Continue towards town|gondola]]
+
+:: gondola
+A pair of large cables reach up the cliffside, two large Gondola cars on either side. One of them is parked at the bottom, next to a small booth. 
+
+Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles

@@ -1,51 +1,241 @@
 :: saxsons
-The wooden door of the shop feels remarkably heavy, you violently yank it from its closed position.
+The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
     
- The door is handmade, uneven, and an entirely different type of wood from the rest of the building. It slams hard behind you, but doesn’t shut all the way. This too requires you to yank it. You hadn’t realized how loud the wind and waves were until the door is shut behind you. 
-Above, a nest of nets and ropes snake their way up into the darkness. There is a loft above you. 
-A stalky man stands behind a countertop. His long unkept beard makes him look older than he really is. Beneath the counter, meticulously arranged like pieces on a chess board, are two or three dozen hand-made fishing lures. Hanging behind the counter, arranged from left to right in descending size order, are nine craft fishing poles. You’ve never seen tools displayed to look so much like trophies.
-----
-The man behind the counter looks at me, brow furrowed.
+Stepping in, it swings shut with a slam. Despite this, it doesn't close all the way.
+
+ This too requires me to yank it. 
+
+I hadn’t realized how loud the caucaophony of wind and waves was until the door finally shuts behind me. 
+Above, a nest of ropes and nets snake their way up into the darkness towards a loft.
+
+A stalky man stands behind a countertop. 
+
+[[Approach|os1]]
+
+[[I should get going (head towards town)|gondola]]
+
+:: os1
+I approach the man behind the counter.
+
+His long unkept beard makes him look older than he really is. 
+
+Beneath the counter, meticulously arranged like pieces on a chess board, are two or three dozen hand-made fishing lures.
+
+Hanging behind the counter, arranged from left to right in descending size order, are nine craft fishing poles. 
+
+I've never seen tools displayed to look so much like trophies.
+
+He looks at me, brow furrowed.
+
+[[Continue|os2]]
+
+:: os2
+<<type 40ms>>
 "Well hello, friend."
+<</type>>
+<<linkreplace "Continue">> \
 He looks me up and down for a moment, as if trying to assure himself that I'm really standing before him.
+<<type 85ms>>
 "What brings you to Sax and Sons?" \
+<</type>>
+<u>[[I'm looking for my father|os3a]]</u>
 
-[[I'm looking for my father.
+<u>[[What is this place?|os4a]]</u>
 
-    <<linkreplace "<u>I'm looking for my father.</u>" >> \
-        <strong>I'm looking for my father.</strong> 
-        <<type 40ms>> 
-        <em>"Your father? Does he live here in Trout’s Mouth?"</em> \
-        <</type>> \
-
-            <<linkreplace "<u>I don't know.</u>" >> \
-                <strong>"I don't know."</strong>
-                <<type 40ms>>
-                "Can’t say that narrows it down. What makes you think he’s here? Not a lot of folks still hanging around.”
-                <</type>>
-            <</linkreplace>>
-
-            <<linkreplace "I was hoping you could answer that (show photograph)">>
-            "I was hoping you could answer that (show photograph)"
-            <<type 40ms>>
-            "He looks at it for a moment, thinking. "
-            <</type>>
-            <</linkreplace>>
-    <</linkreplace>>
-
-    <<linkreplace "<u>What is this place?</u>">> \
-    <strong>What is this place?</strong>
-    <<type 40ms>> \
-    <em>“This here is Sax and Sons. 
-    I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
-    We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
-    Nets, lures, tackle, ropes and rods, all made by hand, right here on site.”</em>
-    <</type>> 
-    <</linkreplace>>
+<u>[[Just browsing|os5a]]</u>
+<</linkreplace>>
 
 
+:: os3a
+I'm looking for my father.
+
+<<type 40ms>>Your father? Does he live here in Trout's Mouth?<</type>>
+[[I don't know.|os3b]]
+[[I was hoping you could tell me that (show photograph)|os3c]]
+
+:: os3b
+I don't know.
+
+<<type 40ms>>Can’t say that narrows it down. 
+What makes you think he’s here?
+Not a lot of folks still hanging around.<</type>>
+[[This is where my parents met (show photograph)|os3b1]]
+[[My parents always talked about how great it was here. Dad especially.|os3b2]]
+
+::os3b1
+This is where my parents met (show photograph).
+
+
+<<type 40ms>>Ahh, I see... Royal Merchant types...
+Can't say I recognize them in particular.
+Had plenty like em through the shop over the years.
+
+
+::os3b2
+My parents always talked about how great is was here. Dad especially
+
+<<type 40ms>>“hmph. Sounds funny, hearing that now. 
+Doesn’t take a genius to see this place ain’t what it used to be. 
+Any idea when they might’ve been here?”<</type>>
+
+<<linkreplace "My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)">> \
+My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)
+
+<<type 40ms>>I see, I see. Lots of trader families have passed through over the years.
+What's the deal with him then? Lost contact over the years or something?
+
+[[Something like that.|os3b3]]
+[[He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.|os3b4]]
+
+:: os3b3
+Something like that. 
+
+<<type 40ms>>Gotcha. Apologies, friend. I don't mean to intrude.<</type>>
+
+:: os3b4
+He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
+
+<<type 40ms>>“I’m sorry, friend. I know how hard that can be.
+Feels like all the questions you never bothered to ask come flying at you in one big cluster. 
+Try not to let it get to you. I think you’re making the right call, coming here and all. 
+Here’s to finding some kinda peace<</type>> 
+
+<<linkreplace "Continue">>He reaches into his coat pocket, retrieving a flask.
+He takes a healthy swig, then offers it to me.
+
+[[Accept|yesbooze]]
+[[Refuse|nobooze]]
+<</linkreplace>>
+
+:: yesbooze
+Tilting my head back, it burns at first, giving way to a satisfying warmth.
+
+What a kind gesture.
+
+<<linkreplace "Thank you">> \
+Thank you.
+
+<<type 40ms>>Don't mention it<</type>>
+<</linkreplace>>
+
+:: nobooze
+He nods, raising the flask to a toast, and takes a swig for you.
 
 
 
+
+:: os3c
+I was hoping you could tell me that (show photograph).
+
+He looks at it for a moment, thinking deeply, before setting the photograph on the counter.
+
+<<linkreplace "Continue">> <<set $rr = true>> \
+<<type 40ms>>Can't say I recognize em. Had plenty of Royal merchants through the shop over the years.
+Always gave em a handsome deal on poles for their R&R.<</type>>
+<<linkreplace "<u>Alright... Thanks anyway (take the picture back)</u>">> \
+Before you can go, he asks:
+<<type 70ms>>That's your ma on the left?<</type>>
+[[Yes. She was born here. Left to be with my dad when she was 16|os3c1]]
+[[Yes. She passed away last week. I guess that's part of why I'm here.|os3c2]]
+<</linkreplace>>
+<</linkreplace>>
+
+:: os3c1
+Yes. She was born here. Left to be with my dad when she was 16.
+
+: os3c2
+Yes. She passed away last week. I guess that's part of why I'm here.
+
+:: os4a
+What is this place?
+
+<<type 40ms>>This here is Sax and Sons. 
+I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
+We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
+Nets, lures, tackle, ropes and rods, all made by hand, right here on site.<</type>>
+[[Get much business?|os4b]]
+[[Anyways, I'm looking for my father|os3a]]
+
+::os4b
+Get much business?
+
+<<type 40ms>>Hell... I knew that one was coming.
+Unfortunately, no. Not since the spill.<</type>>
+[[The spill?|os4b1]]
+[[Why are you still here?|os4b2]]
+
+:: os4b1
+The spill?
+
+<<type 40ms>>"Alright, now you're just pullin my leg."<</type>>
+[[No, really. What is it?|spill]]
+
+:: spill
+No, really. What is it?
+
+<<type 45ms>>"You really ain't from around here, are you?
+I'm talkin about the Royal Merchant tanker that capsized just off the coast out there.
+You had to've seen it if you took the ferry in...
+
+Whole surface of the water burned for two days. Killed damn near every fish this side of Dover.
+Bunch of the locals took it as a sign from The Mother.<</type>>
+
+[[And you?|spill2]]
+[[Interesting... Anyways, I'm looking for my father.|os3a]]
+
+:: spill2
+And you?
+
+<<type 40ms>>Well... Let's just say I wasnt the first to fall in line with the Federation's patch-up job.
+Guess when it was all said and done the Royal Merchant Trade Feds thought it easiest to just pack the whole thing away;
+Moved our ports up North to Hayward. Offered big money and big oppertunity for townsfolk to follow suit. 
+A lot of em were gullible enough to listen.<</type>>
+
+[[Except for you?|spill3]]
+
+:: spill3
+Except for you.
+
+<<type 40ms>>Ha! That's right. Except for me and the rest of them stubborn bastards up in town.<</type>>
+
+[[Well alright... I'm looking for my father.|os3a]]
+[[Interesting... Can I buy something?|buysmth]]
+
+
+:: buysmth
+<<type 40ms>>Anything you like.<</type>>
+[[How about that map?]]
+[[How about that pole?]]
+[[How about this lure?]]
+<</linkreplace>>
+
+::os4b2
+Why are you still here?
+
+<<type 35ms>> "Guess I never saw any sense in trying to do something else.
+This is where I was raised. Son of a fisherman's son. 
+Pa worked his whole life to build this place. How could I let that all go to waste?
+Plus, I love making this stuff. I'm pretty good at it, too."<</type>>
+
+<<linkreplace "Can I buy something?">>Can I buy something?
+<<type 40ms>>Anything you like.<</type>>
+[[How about that map?]]
+[[How about that pole?]]
+[[How about this lure?]]
+<</linkreplace>>
+
+
+::os5a
 Just browsing.
+
+<<type 40ms>>Hahaha. Yeah, and I'm the queen's son. 
+What can I help you with?<</type>>
+[[I'm looking for my father|os3a]]
+[[What is this place?|os4a]]
+
+
+
+
+
+
 

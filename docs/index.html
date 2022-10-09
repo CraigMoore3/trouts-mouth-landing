@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://CC1600F3-94FB-4AB0-8341-D4F455E681D1// --><tw-storydata name="Trout&#39;s Mouth Landing" startnode="4" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="CC1600F3-94FB-4AB0-8341-D4F455E681D1" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.npctext {
+	<!-- UUID://CC1600F3-94FB-4AB0-8341-D4F455E681D1// --><tw-storydata name="Trout&#39;s Mouth Landing" startnode="28" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="CC1600F3-94FB-4AB0-8341-D4F455E681D1" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.npctext {
     font-size: large;
     font-style: italic;
 }
@@ -113,59 +113,185 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
     font-weight: bold;
     color: white;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="saxsons" tags="" position="100,100" size="100,100">The wooden door of the shop feels remarkably heavy, you violently yank it from its closed position.
+
+.pcoption {
+    font-style: underline;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="saxsons" tags="" position="100,100" size="100,100">The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
     
- The door is handmade, uneven, and an entirely different type of wood from the rest of the building. It slams hard behind you, but doesn’t shut all the way. This too requires you to yank it. You hadn’t realized how loud the wind and waves were until the door is shut behind you. 
-Above, a nest of nets and ropes snake their way up into the darkness. There is a loft above you. 
-A stalky man stands behind a countertop. His long unkept beard makes him look older than he really is. Beneath the counter, meticulously arranged like pieces on a chess board, are two or three dozen hand-made fishing lures. Hanging behind the counter, arranged from left to right in descending size order, are nine craft fishing poles. You’ve never seen tools displayed to look so much like trophies.
-----
-The man behind the counter looks at me, brow furrowed.
+Stepping in, it swings shut with a slam. Despite this, it doesn&#39;t close all the way.
+
+ This too requires me to yank it. 
+
+I hadn’t realized how loud the caucaophony of wind and waves was until the door finally shuts behind me. 
+Above, a nest of ropes and nets snake their way up into the darkness towards a loft.
+
+A stalky man stands behind a countertop. 
+
+[[Approach|os1]]
+
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="2" name="os1" tags="" position="225,100" size="100,100">I approach the man behind the counter.
+
+His long unkept beard makes him look older than he really is. 
+
+Beneath the counter, meticulously arranged like pieces on a chess board, are two or three dozen hand-made fishing lures.
+
+Hanging behind the counter, arranged from left to right in descending size order, are nine craft fishing poles. 
+
+I&#39;ve never seen tools displayed to look so much like trophies.
+
+He looks at me, brow furrowed.
+
+[[Continue|os2]]</tw-passagedata><tw-passagedata pid="3" name="os2" tags="" position="350,100" size="100,100">&lt;&lt;type 40ms&gt;&gt;
 &quot;Well hello, friend.&quot;
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;linkreplace &quot;Continue&quot;&gt;&gt; \
 He looks me up and down for a moment, as if trying to assure himself that I&#39;m really standing before him.
+&lt;&lt;type 85ms&gt;&gt;
 &quot;What brings you to Sax and Sons?&quot; \
+&lt;&lt;/type&gt;&gt;
+&lt;u&gt;[[I&#39;m looking for my father|os3a]]&lt;/u&gt;
 
-[[I&#39;m looking for my father.
+&lt;u&gt;[[What is this place?|os4a]]&lt;/u&gt;
 
-    &lt;&lt;linkreplace &quot;&lt;u&gt;I&#39;m looking for my father.&lt;/u&gt;&quot; &gt;&gt; \
-        &lt;strong&gt;I&#39;m looking for my father.&lt;/strong&gt; 
-        &lt;&lt;type 40ms&gt;&gt; 
-        &lt;em&gt;&quot;Your father? Does he live here in Trout’s Mouth?&quot;&lt;/em&gt; \
-        &lt;&lt;/type&gt;&gt; \
+&lt;u&gt;[[Just browsing|os5a]]&lt;/u&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="os3a" tags="" position="475,100" size="100,100">I&#39;m looking for my father.
 
-            &lt;&lt;linkreplace &quot;&lt;u&gt;I don&#39;t know.&lt;/u&gt;&quot; &gt;&gt; \
-                &lt;strong&gt;&quot;I don&#39;t know.&quot;&lt;/strong&gt;
-                &lt;&lt;type 40ms&gt;&gt;
-                &quot;Can’t say that narrows it down. What makes you think he’s here? Not a lot of folks still hanging around.”
-                &lt;&lt;/type&gt;&gt;
-            &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;type 40ms&gt;&gt;Your father? Does he live here in Trout&#39;s Mouth?&lt;&lt;/type&gt;&gt;
+[[I don&#39;t know.|os3b]]
+[[I was hoping you could tell me that (show photograph)|os3c]]</tw-passagedata><tw-passagedata pid="5" name="os3b" tags="" position="600,100" size="100,100">I don&#39;t know.
 
-            &lt;&lt;linkreplace &quot;I was hoping you could answer that (show photograph)&quot;&gt;&gt;
-            &quot;I was hoping you could answer that (show photograph)&quot;
-            &lt;&lt;type 40ms&gt;&gt;
-            &quot;He looks at it for a moment, thinking. &quot;
-            &lt;&lt;/type&gt;&gt;
-            &lt;&lt;/linkreplace&gt;&gt;
-    &lt;&lt;/linkreplace&gt;&gt;
-
-    &lt;&lt;linkreplace &quot;&lt;u&gt;What is this place?&lt;/u&gt;&quot;&gt;&gt; \
-    &lt;strong&gt;What is this place?&lt;/strong&gt;
-    &lt;&lt;type 40ms&gt;&gt; \
-    &lt;em&gt;“This here is Sax and Sons. 
-    I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
-    We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
-    Nets, lures, tackle, ropes and rods, all made by hand, right here on site.”&lt;/em&gt;
-    &lt;&lt;/type&gt;&gt; 
-    &lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;type 40ms&gt;&gt;Can’t say that narrows it down. 
+What makes you think he’s here?
+Not a lot of folks still hanging around.&lt;&lt;/type&gt;&gt;
+[[This is where my parents met (show photograph)|os3b1]]
+[[My parents always talked about how great it was here. Dad especially.|os3b2]]</tw-passagedata><tw-passagedata pid="6" name="os3b1" tags="" position="725,100" size="100,100">This is where my parents met (show photograph).
 
 
+&lt;&lt;type 40ms&gt;&gt;Ahh, I see... Royal Merchant types...
+Can&#39;t say I recognize them in particular.
+Had plenty like em through the shop over the years.</tw-passagedata><tw-passagedata pid="7" name="os3b2" tags="" position="850,100" size="100,100">My parents always talked about how great is was here. Dad especially
 
+&lt;&lt;type 40ms&gt;&gt;“hmph. Sounds funny, hearing that now. 
+Doesn’t take a genius to see this place ain’t what it used to be. 
+Any idea when they might’ve been here?”&lt;&lt;/type&gt;&gt;
 
+&lt;&lt;linkreplace &quot;My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)&quot;&gt;&gt; \
+My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)
 
-Just browsing.</tw-passagedata><tw-passagedata pid="2" name="totown" tags="" position="225,100" size="100,100">Walking along the decaying wooden path, one particular building sticks out amongst the blighted fishing community. 
+&lt;&lt;type 40ms&gt;&gt;I see, I see. Lots of trader families have passed through over the years.
+What&#39;s the deal with him then? Lost contact over the years or something?
 
-[[What&#39;s outside?]]
+[[Something like that.|os3b3]]
+[[He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.|os3b4]]</tw-passagedata><tw-passagedata pid="8" name="os3b3" tags="" position="975,100" size="100,100">Something like that. 
 
-[[Go inside|saxsons]]</tw-passagedata><tw-passagedata pid="3" name="StoryMenu" tags="" position="350,100" size="100,100">&lt;&lt;link &quot;credits&quot;&gt;&gt; &lt;&lt;goto credits&gt;&gt; &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Start" tags="" position="475,100" size="100,100">My parents look so young in the photo. 
+&lt;&lt;type 40ms&gt;&gt;Gotcha. Apologies, friend. I don&#39;t mean to intrude.&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="os3b4" tags="" position="1100,100" size="100,100">He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
+
+&lt;&lt;type 40ms&gt;&gt;“I’m sorry, friend. I know how hard that can be.
+Feels like all the questions you never bothered to ask come flying at you in one big cluster. 
+Try not to let it get to you. I think you’re making the right call, coming here and all. 
+Here’s to finding some kinda peace&lt;&lt;/type&gt;&gt; 
+
+&lt;&lt;linkreplace &quot;Continue&quot;&gt;&gt;He reaches into his coat pocket, retrieving a flask.
+He takes a healthy swig, then offers it to me.
+
+[[Accept|yesbooze]]
+[[Refuse|nobooze]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="yesbooze" tags="" position="1225,100" size="100,100">Tilting my head back, it burns at first, giving way to a satisfying warmth.
+
+What a kind gesture.
+
+&lt;&lt;linkreplace &quot;Thank you&quot;&gt;&gt; \
+Thank you.
+
+&lt;&lt;type 40ms&gt;&gt;Don&#39;t mention it&lt;&lt;/type&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="nobooze" tags="" position="100,225" size="100,100">He nods, raising the flask to a toast, and takes a swig for you.</tw-passagedata><tw-passagedata pid="12" name="os3c" tags="" position="225,225" size="100,100">I was hoping you could tell me that (show photograph).
+
+He looks at it for a moment, thinking deeply, before setting the photograph on the counter.
+
+&lt;&lt;linkreplace &quot;Continue&quot;&gt;&gt; &lt;&lt;set $rr = true&gt;&gt; \
+&lt;&lt;type 40ms&gt;&gt;Can&#39;t say I recognize em. Had plenty of Royal merchants through the shop over the years.
+Always gave em a handsome deal on poles for their R&amp;R.&lt;&lt;/type&gt;&gt;
+&lt;&lt;linkreplace &quot;&lt;u&gt;Alright... Thanks anyway (take the picture back)&lt;/u&gt;&quot;&gt;&gt; \
+Before you can go, he asks:
+&lt;&lt;type 70ms&gt;&gt;That&#39;s your ma on the left?&lt;&lt;/type&gt;&gt;
+[[Yes. She was born here. Left to be with my dad when she was 16|os3c1]]
+[[Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.|os3c2]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="os3c1" tags="" position="350,225" size="100,100">Yes. She was born here. Left to be with my dad when she was 16.
+
+: os3c2
+Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.</tw-passagedata><tw-passagedata pid="14" name="os4a" tags="" position="475,225" size="100,100">What is this place?
+
+&lt;&lt;type 40ms&gt;&gt;This here is Sax and Sons. 
+I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
+We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
+Nets, lures, tackle, ropes and rods, all made by hand, right here on site.&lt;&lt;/type&gt;&gt;
+[[Get much business?|os4b]]
+[[Anyways, I&#39;m looking for my father|os3a]]</tw-passagedata><tw-passagedata pid="15" name="os4b" tags="" position="600,225" size="100,100">Get much business?
+
+&lt;&lt;type 40ms&gt;&gt;Hell... I knew that one was coming.
+Unfortunately, no. Not since the spill.&lt;&lt;/type&gt;&gt;
+[[The spill?|os4b1]]
+[[Why are you still here?|os4b2]]</tw-passagedata><tw-passagedata pid="16" name="os4b1" tags="" position="725,225" size="100,100">The spill?
+
+&lt;&lt;type 40ms&gt;&gt;&quot;Alright, now you&#39;re just pullin my leg.&quot;&lt;&lt;/type&gt;&gt;
+[[No, really. What is it?|spill]]</tw-passagedata><tw-passagedata pid="17" name="spill" tags="" position="850,225" size="100,100">No, really. What is it?
+
+&lt;&lt;type 45ms&gt;&gt;&quot;You really ain&#39;t from around here, are you?
+I&#39;m talkin about the Royal Merchant tanker that capsized just off the coast out there.
+You had to&#39;ve seen it if you took the ferry in...
+
+Whole surface of the water burned for two days. Killed damn near every fish this side of Dover.
+Bunch of the locals took it as a sign from The Mother.&lt;&lt;/type&gt;&gt;
+
+[[And you?|spill2]]
+[[Interesting... Anyways, I&#39;m looking for my father.|os3a]]</tw-passagedata><tw-passagedata pid="18" name="spill2" tags="" position="975,225" size="100,100">And you?
+
+&lt;&lt;type 40ms&gt;&gt;Well... Let&#39;s just say I wasnt the first to fall in line with the Federation&#39;s patch-up job.
+Guess when it was all said and done the Royal Merchant Trade Feds thought it easiest to just pack the whole thing away;
+Moved our ports up North to Hayward. Offered big money and big oppertunity for townsfolk to follow suit. 
+A lot of em were gullible enough to listen.&lt;&lt;/type&gt;&gt;
+
+[[Except for you?|spill3]]</tw-passagedata><tw-passagedata pid="19" name="spill3" tags="" position="1100,225" size="100,100">Except for you.
+
+&lt;&lt;type 40ms&gt;&gt;Ha! That&#39;s right. Except for me and the rest of them stubborn bastards up in town.&lt;&lt;/type&gt;&gt;
+
+[[Well alright... I&#39;m looking for my father.|os3a]]
+[[Interesting... Can I buy something?|buysmth]]</tw-passagedata><tw-passagedata pid="20" name="buysmth" tags="" position="1225,225" size="100,100">&lt;&lt;type 40ms&gt;&gt;Anything you like.&lt;&lt;/type&gt;&gt;
+[[How about that map?]]
+[[How about that pole?]]
+[[How about this lure?]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="os4b2" tags="" position="100,350" size="100,100">Why are you still here?
+
+&lt;&lt;type 35ms&gt;&gt; &quot;Guess I never saw any sense in trying to do something else.
+This is where I was raised. Son of a fisherman&#39;s son. 
+Pa worked his whole life to build this place. How could I let that all go to waste?
+Plus, I love making this stuff. I&#39;m pretty good at it, too.&quot;&lt;&lt;/type&gt;&gt;
+
+&lt;&lt;linkreplace &quot;Can I buy something?&quot;&gt;&gt;Can I buy something?
+&lt;&lt;type 40ms&gt;&gt;Anything you like.&lt;&lt;/type&gt;&gt;
+[[How about that map?]]
+[[How about that pole?]]
+[[How about this lure?]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="os5a" tags="" position="225,350" size="100,100">Just browsing.
+
+&lt;&lt;type 40ms&gt;&gt;Hahaha. Yeah, and I&#39;m the queen&#39;s son. 
+What can I help you with?&lt;&lt;/type&gt;&gt;
+[[I&#39;m looking for my father|os3a]]
+[[What is this place?|os4a]]</tw-passagedata><tw-passagedata pid="23" name="totown" tags="" position="350,350" size="100,100">Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness. 
+
+[[What is it?|saxext]]
+
+[[Go inside|saxsons]]
+
+[[Continue towards town|gondola]]</tw-passagedata><tw-passagedata pid="24" name="saxext" tags="" position="475,350" size="100,100">A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
+I can barely make out a flip-sign that reads “open” through the salt-caked, sand-blasted glass.
+
+[[Go inside|saxsons]]
+
+[[Continue towards town|gondola]]</tw-passagedata><tw-passagedata pid="25" name="gondola" tags="" position="600,350" size="100,100">A pair of large cables reach up the cliffside, two large Gondola cars on either side. One of them is parked at the bottom, next to a small booth. 
+
+Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles</tw-passagedata><tw-passagedata pid="26" name="StoryMenu" tags="" position="725,350" size="100,100">&lt;&lt;link &quot;credits&quot;&gt;&gt; &lt;&lt;goto credits&gt;&gt; &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="StoryInit" tags="" position="850,350" size="100,100">&lt;&lt;set $rr = false&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Start" tags="" position="975,350" size="100,100">My parents look so young in the photo. 
 
 I realize how little I recognize the faces that peer back at me. 
 
@@ -173,25 +299,25 @@ To tell myself that I know who these people are, these kids, would be a lie.
 
 As the ferry slows to a crawl, the view of Trout&#39;s Mouth Landing is almost too much to take in. 
 
-A solemn, forgotten volume in Brosset&#39;s endless history; a towering monument to abandoning the past. 
+A solemn, forgotten volume in Brosset&#39;s endless history; a towering monument to the ceaseless will to abandon the past. 
 
-It&#39;s easy to say that I&#39;m here looking for my father.
+It&#39;s easy to say that I&#39;m here looking for my father, but its not that simple.
 
 I step off the ferry in search of a memory.
 
-[[Continue|dockdesc]]</tw-passagedata><tw-passagedata pid="5" name="dockdesc" tags="" position="600,100" size="100,100">Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
+[[Continue|dockdesc]]</tw-passagedata><tw-passagedata pid="29" name="dockdesc" tags="" position="1100,350" size="100,100">Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
 
 Most of the buldings look abandoned. The silence, save for the sound of waves colliding with the dock&#39;s supports below, is uncharacteristic for a community of this size.
 
 In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
 
-Ahead, on my left, there are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
+Ahead, on my left, are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
 
 The sight of stairs leading to a watery nothingness sends a chill down your spine.
 
 [[Head towards town|totown]].
 
-[[What else is there?|dockdesc2]]</tw-passagedata><tw-passagedata pid="6" name="dockdesc2" tags="" position="725,100" size="100,100">Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
+[[What else is there?|dockdesc2]]</tw-passagedata><tw-passagedata pid="30" name="dockdesc2" tags="" position="1225,350" size="100,100">Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
 
 The ferry dropped me off in the remains of a fishing villiage. Probably local shops, built from cheap, local materials.
 

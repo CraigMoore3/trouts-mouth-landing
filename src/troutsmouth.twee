@@ -11,6 +11,8 @@ Trout's Mouth Landing
 :: StoryMenu
 <<link "credits">> <<goto credits>> <</link>>
 
+:: StoryInit
+<<set $rr = false>>
 
 :: Start
 
@@ -22,9 +24,9 @@ To tell myself that I know who these people are, these kids, would be a lie.
 
 As the ferry slows to a crawl, the view of Trout's Mouth Landing is almost too much to take in. 
 
-A solemn, forgotten volume in Brosset's endless history; a towering monument to abandoning the past. 
+A solemn, forgotten volume in Brosset's endless history; a towering monument to the ceaseless will to abandon the past. 
 
-It's easy to say that I'm here looking for my father.
+It's easy to say that I'm here looking for my father, but its not that simple.
 
 I step off the ferry in search of a memory.
 
@@ -38,7 +40,7 @@ Most of the buldings look abandoned. The silence, save for the sound of waves co
 
 In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
 
-Ahead, on my left, there are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
+Ahead, on my left, are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
 
 The sight of stairs leading to a watery nothingness sends a chill down your spine.
 
