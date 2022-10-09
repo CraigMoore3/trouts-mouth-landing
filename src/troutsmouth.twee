@@ -14,41 +14,54 @@ Trout's Mouth Landing
 
 :: Start
 
+My parents look so young in the photo. 
+
+I realize how little I recognize the faces that peer back at me. 
+
+To tell myself that I know who these people are, these kids, would be a lie.
+
 As the ferry slows to a crawl, the view of Trout's Mouth Landing is almost too much to take in. 
 
-I step onto the big dock. 
+A solemn, forgotten volume in Brosset's endless history; a towering monument to abandoning the past. 
 
-Ahead of me an intersecting pathway through a fishing villiage resembling a pirate shantytown. 
+It's easy to say that I'm here looking for my father.
 
-In the distance you notice a town, probably the center of Trouts mouth Landing.
+I step off the ferry in search of a memory.
 
-To my left, there are some steps that creep down towards the beach.
+[[Continue|dockdesc]]
 
+:: dockdesc
+
+Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
+
+Most of the buldings look abandoned. The silence, save for the sound of waves colliding with the dock's supports below, is uncharacteristic for a community of this size.
+
+In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
+
+Ahead, on my left, there are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
+
+The sight of stairs leading to a watery nothingness sends a chill down your spine.
 
 [[Head towards town|totown]].
 
-[[Take the stairs to the beach.|tobeach]]
+[[What else is there?|dockdesc2]]
 
-:: totown
-Walking along the decaying wooden path, one particular building sticks out amongst the blighted fishing community. 
+:: dockdesc2
 
-[[What's outside?]]
+Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
 
-[[Go inside|saxsons]]
+The ferry dropped me off in the remains of a fishing villiage. Probably local shops, built from cheap, local materials.
 
-:: tobeach
-The smell of stinking kelp fills my head, only getting worse as I approach the ground. 
+The dilapitated wooden structures continue for a while, eventually giving way to taller, uglier buildings of gray concrete.
 
-The tide is low enough for me to walk under the pier. Following that path with my eyes, I notice a cove formed in the cliffside.
+Steam and oil powered machines lie, decrepit and decaying, in a permanent purgatory. 
 
-The opposite side of the beach is mostly barren, save for a small cabin surrounded by twenty meters of junk.
+Its not a great idea to explore condemned Royal Merchant property.
 
-[[Check out the cabin|inventor1]]
+Not without a reason.
 
-[[Check out the cove|cove1]]
+[[Head towards town|totown]]
 
-:: inventor1
-This is the inventor's shack.
 
-:: cove1
-Before I could reach the cove, the tide was almost up to my knees. No way I'm going for a swim.
+
+
