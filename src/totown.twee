@@ -17,6 +17,56 @@ I can barely make out a flip-sign that reads “open” through the salt-caked, 
 [[Continue towards town|gondola]]
 
 :: gondola
-A pair of large cables reach up the cliffside, two large Gondola cars on either side. One of them is parked at the bottom, next to a small booth. 
+At the base of the cliff, a pair of large cables reach up towards the town center, two large Gondola cars on either side. 
 
-Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles
+One of them is parked at the bottom, next to a small booth manned by a curious looking man.
+
+Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles.
+
+[[Approach the booth|gondola2]]
+
+:: gondola2
+As I approach the man, he suddenly sits up with a jolt of energy.
+\
+<<timed 2s t8n>>
+He belts, like a prideful sea dog after a barrel of ale. 
+
+It is surprising to see someone so animated in such a frail body. <</timed>>
+
+<<timed 5s t8n>><<type 40ms>>“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid dishing out a couple bruises fore breakfast if you catch my drift.”<</type>> 
+
+[[I don't mean any trouble, sir. I was hoping to catch a ride up into town|gondolakind]]
+[[I've come to deul, old man. Turn yourself in (pause dramatically, reach for your hip) or suffer the consequences|gondolajoke1]] 
+<</timed>>
+
+
+:: gondolakind
+I don't mean any trouble, sir. I was hoping to catch a ride up into town
+
+<<type 40ms>>CERTAINLY, ME BOY, CERTAINLY. I WAS ONLY PULLING YER LEG!
+Hope ye don't mind a bumpy ride.
+Yer all ready I presume?<</type>>
+
+[[Yes, let go (head to town)|gondolaride]]
+[[Wait, there's something else I wanted to do (return to dock)]]
+
+
+:: gondolajoke1
+I've come to deul, old man. Turn yourself in (pause dramatically, reach for your hip) or suffer the consequences.
+
+<<timed 1s t8n>>The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
+No telling what the geezer is capable of...<</timed>>
+
+<<timed 3s t8n>> Suddenly, he erupts with laughter.
+
+ <<type 60ms>>BAAAHAHAAHAAAAHAA<</type>><</timed>>
+
+<<timed 4s t8n>>His breath shortens, laughter turns into wheezing. He pounds on his chest, then seems to settle down.<</timed>>
+
+:: dockre
+[[Check out the fishing shop|saxtext]]
+[[Go back to the ferry dock|dockdesc]]
+[[Take the gondola to town|gondolaride]]
+
+
+
