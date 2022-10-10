@@ -9,10 +9,16 @@
 Trout's Mouth Landing
 
 :: StoryMenu
+<<link "Inventory">><<goto inventory>><</link>>
 <<link "credits">> <<goto credits>> <</link>>
+
 
 :: StoryInit
 <<set $rr = false>>
+<<set $map = false>>
+<<set $fishpole = false>>
+<<set $fishlure = false>>
+<<set $spyglass = false>>
 
 :: Start
 
