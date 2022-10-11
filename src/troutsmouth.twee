@@ -15,6 +15,8 @@ Trout's Mouth Landing
 
 :: StoryInit
 <<set $rr = false>>
+<<set $knowspill = false>>
+<<set $knowhammonds = false>>
 <<set $map = false>>
 <<set $fishpole = false>>
 <<set $fishlure = false>>
