@@ -131,7 +131,29 @@ In less time than I had anticipated, the cable car slows to a halt.
 :: dockre
 [[Check out the fishing shop|saxtext]]
 [[Go back to the ferry dock|dockdesc]]
+[[Head down to the beach|beach]]
 [[Take the gondola to town|gondolaride]]
 
+:: gondoladown
+Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
+
+Fortunately, he seems to have roused himself.
+
+<<linkreplace "Continue">><<type 40ms>>Good day! Fancy a ride down the cliff?<</type>>
+
+[[Yes, please!|dockre]]
+[[Actually, I need to do something else in town.|downtownre]]
+<</linkreplace>>
+
+:: beach
+<<if $beachpermission>>
+You're at the beach!
+<<else>>
+At this time of day, the tide is high enough to cover the bottom third of the stairs. 
+
+The sight of stairs leading to a watery nothingness sends a chill down your spine.
+
+[[Return|dockre]]
+<</if>>
 
 
