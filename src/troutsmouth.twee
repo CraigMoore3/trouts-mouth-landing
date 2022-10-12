@@ -23,10 +23,9 @@ Trout's Mouth Landing
 <<set $fishlure = false>>
 <<set $spyglass = false>>
 
-
 :: Start
 
-My parents look so young in the photo. 
+@@.env;My parents look so young in the photo. 
 
 I realize how little I recognize the faces that peer back at me. 
 
@@ -38,29 +37,27 @@ A solemn, forgotten volume in Brosset's endless history; a towering monument to 
 
 It's easy to say that I'm here looking for my father, but its not that simple.
 
-I step off the ferry in search of a memory.
+I step off the ferry in search of a memory.@@
 
-[[Continue|dockdesc]]
+<u>[[Continue|dockdesc]]</u>
 
 :: dockdesc
 
-Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
+@@.env;Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
 
 Most of the buldings look abandoned. The silence, save for the sound of waves colliding with the dock's supports below, is uncharacteristic for a community of this size.
 
 In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
 
-Ahead, on my left, are some steps that stretch in the direction of the rocky beach. 
+Ahead, on my left, are some steps that stretch in the direction of the rocky beach.@@
 
-[[Head towards town|totown]]
-
-[[Try the steps to the beach.|nochancebeach]]
-
-[[What else is there?|dockdesc2]]
+<u>[[1. Head towards town|totown]]
+[[2. Try the steps to the beach.|nochancebeach]]
+[[3. What else is there?|dockdesc2]]</u>
 
 :: dockdesc2
 
-Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
+@@.env;Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
 
 The ferry dropped me off in the remains of a fishing villiage. Probably local shops, built from cheap, local materials.
 
@@ -70,16 +67,16 @@ Steam and oil powered machines lie, decrepit and decaying, in a permanent purgat
 
 Its not a great idea to explore condemned Royal Merchant property.
 
-Not without a reason.
+Not without a reason.@@
 
-[[Head towards town|totown]]
+<u>[[Head towards town|totown]]</u>
 
 :: nochancebeach
-At this time of day, the tide is high enough to cover the bottom third of the stairs. 
+@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
 
-The sight of stairs leading to a watery nothingness sends a chill down your spine.
+The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
 
-[[Return|dockdesc]]
+<u>[[Return|dockdesc]]</u>
 
 
 
