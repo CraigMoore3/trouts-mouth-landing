@@ -28,15 +28,15 @@ Asleep at the job with his nose in a book, tiny eyes peeking out from thick glas
 :: gondola2
 As I approach the man, he suddenly sits up with a jolt of energy.
 \
-<<timed 2s t8n>>
+<<timed 1s t8n>>
 He belts, like a prideful sea dog after a barrel of ale. 
 
-It is surprising to see someone so animated in such a frail body. <</timed>>
+It is surprising to see someone so animated in such a frail body. 
 
-<<timed 5s t8n>><<type 40ms>>“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid dishing out a couple bruises fore breakfast if you catch my drift.”<</type>> 
+<<type 40ms>>“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”<</type>> 
 
 [[I don't mean any trouble, sir. I was hoping to catch a ride up into town|gondolakind]]
-[[I've come to deul, old man. Turn yourself in (pause dramatically, reach for your hip) or suffer the consequences|gondolajoke1]] 
+[[I've come to deul, old man. Turn yourself in or suffer the consequences|gondolajoke1]] 
 <</timed>>
 
 
@@ -47,21 +47,86 @@ I don't mean any trouble, sir. I was hoping to catch a ride up into town
 Hope ye don't mind a bumpy ride.
 Yer all ready I presume?<</type>>
 
-[[Yes, let go (head to town)|gondolaride]]
-[[Wait, there's something else I wanted to do (return to dock)]]
+[[Yes, let's go! (head to town)|gondolaride]]
+[[Wait, there's something else I wanted to do. (return to dock)|dockre]]
 
 
 :: gondolajoke1
-I've come to deul, old man. Turn yourself in (pause dramatically, reach for your hip) or suffer the consequences.
+I've come to deul, old man. Turn yourself in or suffer the consequences.
 
-<<timed 1s t8n>>The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
-No telling what the geezer is capable of...<</timed>>
+The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
+No telling what the geezer is capable of...
 
-<<timed 3s t8n>> Suddenly, he erupts with laughter.
+[[Continue|gondolajoke2]]
 
- <<type 60ms>>BAAAHAHAAHAAAAHAA<</type>><</timed>>
+:: gondolajoke2
+Suddenly, he erupts with laughter.
 
-<<timed 4s t8n>>His breath shortens, laughter turns into wheezing. He pounds on his chest, then seems to settle down.<</timed>>
+ <<type 60ms>>BAAAHAHAAHAAAAHAA<</type>> \
+
+<<timed 1s t8n>> His breath shortens, laughter turns into wheezing. He pounds on his chest, then seems to settle down.
+
+<<type 50ms>>You got me there, son. Might surprise you to hear that I've left my fighting days behind.
+Anywho, what can I do for you?<</type>> <</timed>>
+
+[[I was hoping this could take me up into town (point at gondola).|gondolajoke3]]
+
+:: gondolajoke3
+I was hoping this could take me up into town (point at gondola).
+
+<<type 40ms>>Certainly, my boy. S'long as you don't mind a bumpy ride!<</type>> 
+
+[[Let's go!|gondolaride]]
+[[Wait, there's something else I wanted to do.|dockre]]
+
+
+
+:: gondolaride
+The electric motor of the gondola starts up with a mechanical warmth.
+
+Soon after, the car begins to lift itself from the ground, towards the top of the cliff.
+
+[[What's the view like?|gondolaview]]
+[[Enjoy the ride.|downtown1]]
+
+
+:: gondolaview
+<<if $knowspill>>
+From this height, it is very easy to spot the capsized Royal Trade vessel, penetrating the surface of the water. 
+It's an eyesore, but the absoluteness of its existence compells me nonetheless. 
+
+The questions it raises are boundless.
+
+What if that was my father's vessel?
+How did something like this happen in such calm waters?
+It's no wonder so few folks could stand to stick around it.
+
+[[Anything else?|gondolaview2]]
+[[Enjoy the remainder of the ride|downtown1]]
+<<else>>
+The land surrounding Trout's Mouth Landing is unquestionably beautiful. 
+
+From this height, my attention is drawn to a small island housing a partially rundown lighthouse and an adjacent outdoor structure.
+
+I think that it's a shrine of some sort.
+
+Next to the island, penetrating the surface of the water, is a capsized Royal Trade vessel. 
+
+What the hell happened there?
+
+In less time than I had anticipated, the cable car slows to a halt.
+
+[[Head downtown|downtown1]]
+<</if>>
+
+:: gondolaview2
+I also notice a small island next to the wreckage. It is home to a partially rundown lighthouse and an adjacent outdoor structure.
+
+I think that it's a shrine of some sort.
+
+In less time than I had anticipated, the cable car slows to a halt.
+
+[[Head downtown|downtown1]]
 
 :: dockre
 [[Check out the fishing shop|saxtext]]
