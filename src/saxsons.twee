@@ -1,5 +1,5 @@
 :: saxsons
-The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
+@@.env;The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
     
 Stepping in, it swings shut with a slam. Despite this, it doesn't close all the way.
 
@@ -8,14 +8,13 @@ Stepping in, it swings shut with a slam. Despite this, it doesn't close all the 
 I hadn’t realized how loud the caucaophony of wind and waves was until the door finally shuts behind me. 
 Above, a nest of ropes and nets snake their way up into the darkness towards a loft.
 
-A stalky man stands behind a countertop. 
+A stalky man stands behind a countertop.@@
 
-[[Approach|os1]]
-
-[[I should get going (head towards town)|gondola]]
+<u>[[1. Approach|os1]]
+[[2. I should get going (head towards town)|gondola]]</u>
 
 :: os1
-I approach the man behind the counter.
+@@.env;I approach the man behind the counter.
 
 His long unkept beard makes him look older than he really is. 
 
@@ -25,29 +24,25 @@ Hanging behind the counter, arranged from left to right in descending size order
 
 I've never seen tools displayed to look so much like trophies.
 
-He looks at me, brow furrowed.
+He looks at me, brow furrowed.@@
 
-[[Continue|os2]]
-
+<u>[[Continue|os2]]</u>
 
 
 
 :: os2
 <<type 40ms>>
-"Well hello, friend."
+@@.npcdialogue;"Well hello, friend."@@
 <</type>>
-<<linkreplace "Continue">> \
-He looks me up and down for a moment, as if trying to assure himself that I'm really standing before him.
+<<linkreplace <u>Continue</u> >> \
+@@.env;He looks me up and down for a moment, as if trying to assure himself that I'm really standing before him.@@
 <<type 85ms>>
-"What brings you to Sax and Sons?" \
+@@.npcdialogue;"What brings you to Sax and Sons?"@@ \
 <</type>>
-<u>[[I'm looking for my father|os3a]]</u>
-
-<u>[[What is this place?|os4a]]</u>
-
-<u>[[Just browsing|os5a]]</u>
-
-<u>[[I should get going (head towards town)|gondola]]</u>
+@@.pcdialogue;[[1. "I'm looking for my father"|os3a]]
+[[2. "What is this place?"|os4a]]
+[[3. "Just browsing"|os5a]]
+[[4. "I should get going"|gondola]]@@
 <</linkreplace>>
 
 
@@ -55,41 +50,53 @@ He looks me up and down for a moment, as if trying to assure himself that I'm re
 
 
 :: os3a
-I'm looking for my father.
+@@.pcprintd;"I'm looking for my father."@@
 
-<<type 40ms>>Your father? Does he live here in Trout's Mouth?<</type>>
-[[I don't know.|os3b]]
-[[I was hoping you could tell me that (show photograph)|os3c]]
+<<type 40ms>>@@.npcdialogue;Your father? Does he live here in Trout's Mouth?@@<</type>>
+@@.pcdialogue;[[1. "I don't know."|os3b]]
+[[2. "I was hoping you could tell me that." (show photograph)|os3c]]@@
 
 :: os3b
-I don't know.
+@@.pcprintd;"I don't know."@@
 
-<<type 40ms>>Can’t say that narrows it down. 
+<<type 40ms>>@@.npcdialogue;Can’t say that narrows it down. 
 What makes you think he’s here?
-Not a lot of folks still hanging around.<</type>>
-[[This is where my parents met (show photograph)|os3b1]]
-[[My parents always talked about how great it was here. Dad especially.|os3b2]]
+Not a lot of folks still hanging around.@@<</type>>
+@@.pcdialogue;[[1. "This is where my parents met." (show photograph)|os3b1]]
+[[2. "My parents always talked about how great it was here. Dad especially."|os3b2]]@@
 
 
 
 
 
 
-::os3b1
-This is where my parents met (show photograph).
+:: os3b1
+@@.pcprintd;"This is where my parents met."@@
 
 
-<<type 40ms>>Ahh, I see... Royal Merchant types...
+<<type 40ms>>@@.npcdialogue;Ahh, I see... Royal Merchant types...
 Can't say I recognize them in particular.
-Had plenty like em through the shop over the years.<</type>>
+Had plenty like em through the shop over the years.@@<</type>>
 
-<<linkreplace "<u>Alright... Thanks anyways (take the picture back)</u>">> \
-Before you can go, he asks:
-<<type 70ms>>That's your ma on the left?<</type>>
-[[Yes. She was born here. Moved away to be with my dad when she was 16|os3c1]]
-[[Yes. She passed away last week. I guess that's part of why I'm here.|os3c2]]
-<</linkreplace>>
+@@.pcdialogue;[["Alright... Thanks anyways." (take the picture back)|os3b1cont]]@@
 
+
+
+
+:: os3b1cont
+@@.pcprintd;"This is where my parents met."@@
+
+
+<<type 40ms>>@@.npcdialogue;Ahh, I see... Royal Merchant types...
+Can't say I recognize them in particular.
+Had plenty like em through the shop over the years.@@<</type>>
+
+@@.pcprintd;"Alright... Thanks anyways." (take the picture back)@@
+
+@@.env;Before you can go, he asks:@@
+<<type 70ms>>@@.npcdialogue;That's your ma on the left?@@<</type>>
+@@.pcdialogue;[[1. "Yes. She was born here. Moved away to be with my dad when she was 16."|os3c1]]
+[[2. "Yes. She passed away last week. I guess that's part of why I'm here."|os3c2]]@@
 
 
 

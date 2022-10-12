@@ -6,7 +6,7 @@ A man in old Royal Navy trousers and a stained undershirt is asleep at one of th
 
 <<linkreplace "Continue">>
 A muffled voice yells from behind a wall:
-<<type 55ms>>CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT<</type>>
+<<type 55ms>>BAR'S CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT<</type>>
 
 [[Sorry, sir, but I was hoping you could help me!|sorryhammond]]
 [[Say nothing|ghost]]
@@ -14,3 +14,56 @@ A muffled voice yells from behind a wall:
 [[OKAY! (leave)|downtownre]]
 <</linkreplace>>
 
+
+
+:: sorryhammond
+Sorry, sir, but I was hoping you could help me!
+
+For a momment, there is only silence. Then, a low groaning.
+
+<<type 30ms>>Aggh! Okay. Keep your shirt on, I'm coming out.<</type>>
+
+[[Continue|sorryhammond2]]
+
+:: sorryhammond2
+A swinging door pops open, revealing a haggerd looking man with a slouch, somewhere between the age of twenty-five and seventy.
+
+The years have not been kind to him, although what he lacks in beauty is more than made up for by an indescribable air of wisdom.
+
+@@.npctext;It's clear that this guy has seen some things.@@
+
+<<timed 1s>><<type 40ms>>Oh... Welcome, stranger. Can't say I was expecting a new face. What can I do for you?"<</type>>
+
+<<if $knowhammonds>>
+[[Sorry to bother you, Langely. I was talking with Oswald and he though you might be able to help me.]]
+[[I'm sorry, are you closed?]]
+[[Where is everyone?]]
+<<else>>
+[[I'm looking for my father. I was hoping you might be able to help.]]
+[[I'm sorry, are you closed?]]
+[[Where is everyone?]]
+<</if>>
+
+<</timed>>
+
+
+:: ghost
+I stand in the doorway, silently.
+
+<<timed 1s t8n>><<type 40ms>>MOTHER'S SAKE, LEE! YOU TURNED DEAF <em>AND</em> DUMB?<</type>><</timed>>
+
+<<timed 2s t8n>>I can hear the man fumbling around in the back before he explodes through a swinging door.<</timed>>
+
+<<timed 3s t8n>><<type 40ms>>WHAT'S A MATTER WITH- oh... I'm sorry fella... I thought you were- anywho...
+Hello! Name's Hammond. Langely Hammond. What can I do for you?<</type>>
+
+<<if $knowhammonds>>
+[[Sorry to bother you, Langely. I was talking with Oswald and he though you might be able to help me]]
+[[I'm sorry, are you closed?]]
+[[Where is everyone?]]
+<<else>>
+[[I'm looking for my father. I was hoping you might be able to help.]]
+[[I'm sorry, are you closed?]]
+[[Where is everyone?]]
+<</if>>
+<</timed>>

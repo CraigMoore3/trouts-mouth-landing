@@ -1,20 +1,37 @@
-.npctext {
-    font-size: large;
-    font-style: italic;
+* {
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large
 }
 
-.context {
-    font-size: medium;
-    color: gray;
+.env {
+    color: rgb(200, 216, 225);
 }
 
-.pctext {
-    font-size:larger;
-    font-weight: bold;
+
+
+.npcdialogue {
+    font-size:x-large;
+    font-style: oblique;
     color: white;
 }
 
-.pcoption {
-    font-style: underline;
-    color: red
+
+
+
+.pcdialogue {
+    font-style:oblique;
+    font-size: x-large;
+}
+
+
+
+
+.pcprintd {
+    font-size:x-large;
+    font-style:oblique;
+    color: white;
+}
+
+.pcprinta {
+    color: rgb(190, 190, 190);
 }

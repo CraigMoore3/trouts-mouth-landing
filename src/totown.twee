@@ -1,110 +1,107 @@
 :: totown
 
-Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness. 
+@@.env;Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness.@@
 
-[[What is it?|saxext]]
-
-[[Go inside|saxsons]]
-
-[[Continue towards town|gondola]]
+<u>[[1. What is it?|saxext]]
+[[2. Go inside|saxsons]]
+[[3. Continue towards town|gondola]]</u>
 
 :: saxext
-A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
-I can barely make out a flip-sign that reads “open” through the salt-caked, sand-blasted glass.
+@@.env;A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
+I can barely make out a flip-sign that reads “open” through the salt-caked, sand-blasted glass.@@
 
-[[Go inside|saxsons]]
-
-[[Continue towards town|gondola]]
+<u>[[1. Go inside|saxsons]]
+[[2. Continue towards town|gondola]]</u>
 
 :: gondola
-At the base of the cliff, a pair of large cables reach up towards the town center, two large Gondola cars on either side. 
+@@.env;At the base of the cliff, a pair of large cables reach up towards the town center, two large Gondola cars on either side. 
 
 One of them is parked at the bottom, next to a small booth manned by a curious looking man.
 
-Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles.
+Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles.@@
 
-[[Approach the booth|gondola2]]
+<U>[[Approach the booth|gondola2]]</U>
 
 :: gondola2
-As I approach the man, he suddenly sits up with a jolt of energy.
+@@.env;As I approach the man, he suddenly sits up with a jolt of energy.
 \
 <<timed 1s t8n>>
-He belts, like a prideful sea dog after a barrel of ale. 
+He belts, like a prideful sea dog after a barrel of ale.
 
-It is surprising to see someone so animated in such a frail body. 
+It is surprising to see someone so animated in such a frail body.@@
 
-<<type 40ms>>“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”<</type>> 
-
-[[I don't mean any trouble, sir. I was hoping to catch a ride up into town|gondolakind]]
-[[I've come to deul, old man. Turn yourself in or suffer the consequences|gondolajoke1]] 
+<<type 40ms>>@@.npcdialogue;“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”@@<</type>> 
+\
+@@.pcdialogue;[[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]
+[[2. "I've come to deul, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]@@
 <</timed>>
 
 
 :: gondolakind
-I don't mean any trouble, sir. I was hoping to catch a ride up into town
+@@.pcprintd;"I don't mean any trouble, sir. I was hoping to catch a ride up into town."@@
 
-<<type 40ms>>CERTAINLY, ME BOY, CERTAINLY. I WAS ONLY PULLING YER LEG!
+<<type 40ms>>@@.npcdialogue;CERTAINLY, ME BOY, CERTAINLY. I WAS ONLY PULLING YER LEG!
 Hope ye don't mind a bumpy ride.
-Yer all ready I presume?<</type>>
-
-[[Yes, let's go! (head to town)|gondolaride]]
-[[Wait, there's something else I wanted to do. (return to dock)|dockre]]
+Yer all ready I presume?@@<</type>>
+\
+@@.pcdialogue;[[1. "Yes, let's go!"|gondolaride]]
+[[2. "Wait, there's something else I wanted to do at the docks."|dockre]]@@
 
 
 :: gondolajoke1
-I've come to deul, old man. Turn yourself in or suffer the consequences.
+@@.pcprintd;"I've come to deul, old man. Turn yourself in or suffer the consequences."@@
 
-The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
-No telling what the geezer is capable of...
+@@.env;The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
+No telling what the geezer is capable of...@@
 
-[[Continue|gondolajoke2]]
+<u>[[Continue|gondolajoke2]]</u>
 
 :: gondolajoke2
-Suddenly, he erupts with laughter.
+@@.env;Suddenly, he erupts with laughter.@@
 
- <<type 60ms>>BAAAHAHAAHAAAAHAA<</type>> \
+ <<type 60ms>>@@.npcdialogue;BAAAHAHAAHAAAAHAA@@<</type>> \
 
-<<timed 1s t8n>> His breath shortens, laughter turns into wheezing. He pounds on his chest, then seems to settle down.
+<<timed 1s t8n>> @@.env; His breath shortens, laughter turns into wheezing. He pounds on his chest, then seems to settle down.@@
 
-<<type 50ms>>You got me there, son. Might surprise you to hear that I've left my fighting days behind.
-Anywho, what can I do for you?<</type>> <</timed>>
+<<type 50ms>>@@.npcdialogue;You got me there, son. Might surprise you to hear that I've left my fighting days behind.
+Anywho, what can I do for you?@@<</type>> <</timed>>
 
-[[I was hoping this could take me up into town (point at gondola).|gondolajoke3]]
+@@.pcdialogue;[["I was hoping to ride the gondola up to town"|gondolajoke3]]@@
 
 :: gondolajoke3
-I was hoping this could take me up into town (point at gondola).
+@@.pcdialogue;"I was hoping to ride the gondola up to town."@@
 
-<<type 40ms>>Certainly, my boy. S'long as you don't mind a bumpy ride!<</type>> 
+<<type 40ms>>@@.npcdialogue;Certainly, my boy. S'long as you don't mind a bumpy ride!@@<</type>> 
 
-[[Let's go!|gondolaride]]
-[[Wait, there's something else I wanted to do.|dockre]]
+@@.pcdialogue;[[1. "Let's go!"|gondolaride]]
+[[2. "Wait, there's something else I wanted to do at the docks.:"|dockre]]@@
 
 
 
 :: gondolaride
-The electric motor of the gondola starts up with a mechanical warmth.
+@@.env;The electric motor of the gondola starts up with a mechanical warmth.
 
-Soon after, the car begins to lift itself from the ground, towards the top of the cliff.
+Soon after, the car begins to lift itself from the ground, towards the top of the cliff.@@
 
-[[What's the view like?|gondolaview]]
-[[Enjoy the ride.|downtown1]]
+<u>[[1. What's the view like?|gondolaview]]
+[[2. Enjoy the ride.|downtown1]]</u>
 
 
 :: gondolaview
 <<if $knowspill>>
-From this height, it is very easy to spot the capsized Royal Trade vessel, penetrating the surface of the water. 
+@@.env;From this height, it is very easy to spot the capsized Royal Trade vessel, penetrating the surface of the water. 
 It's an eyesore, but the absoluteness of its existence compells me nonetheless. 
 
 The questions it raises are boundless.
 
 What if that was my father's vessel?
 How did something like this happen in such calm waters?
-It's no wonder so few folks could stand to stick around it.
+It's no wonder so few folks could stand to stick around it.@@
 
-[[Anything else?|gondolaview2]]
-[[Enjoy the remainder of the ride|downtown1]]
+<u>[[1. Anything else?|gondolaview2]]
+[[2. Enjoy the remainder of the ride|downtown1]]</u>
 <<else>>
-The land surrounding Trout's Mouth Landing is unquestionably beautiful. 
+@@.env;The land surrounding Trout's Mouth Landing is unquestionably beautiful. 
 
 From this height, my attention is drawn to a small island housing a partially rundown lighthouse and an adjacent outdoor structure.
 
@@ -114,46 +111,46 @@ Next to the island, penetrating the surface of the water, is a capsized Royal Tr
 
 What the hell happened there?
 
-In less time than I had anticipated, the cable car slows to a halt.
+In less time than I had anticipated, the cable car slows to a halt.@@
 
-[[Head downtown|downtown1]]
+<u>[[Head downtown|downtown1]]</u>
 <</if>>
 
 :: gondolaview2
-I also notice a small island next to the wreckage. It is home to a partially rundown lighthouse and an adjacent outdoor structure.
+@@.env;I also notice a small island next to the wreckage. It is home to a partially rundown lighthouse and an adjacent outdoor structure.
 
 I think that it's a shrine of some sort.
 
-In less time than I had anticipated, the cable car slows to a halt.
+In less time than I had anticipated, the cable car slows to a halt.@@
 
-[[Head downtown|downtown1]]
+<u>[[Head downtown|downtown1]]</u>
 
 :: dockre
-[[Check out the fishing shop|saxtext]]
-[[Go back to the ferry dock|dockdesc]]
-[[Head down to the beach|beach]]
-[[Take the gondola to town|gondolaride]]
+<u>[[1. Check out the fishing shop|saxtext]]
+[[2. Go back to the ferry dock|dockdesc]]
+[[3. Head down to the beach|beach]]
+[[4. Take the gondola to town|gondolaride]]</u>
 
 :: gondoladown
-Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
+@@.env;Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
 
-Fortunately, he seems to have roused himself.
+Fortunately, he seems to have roused himself.@@
 
-<<linkreplace "Continue">><<type 40ms>>Good day! Fancy a ride down the cliff?<</type>>
+<<linkreplace "Continue">><<type 40ms>>@@.npcdialogue;"Good day! Fancy a ride down the cliff?"@@<</type>>
 
-[[Yes, please!|dockre]]
-[[Actually, I need to do something else in town.|downtownre]]
+@@.pcdialogue;[[1. "Yes, please!"|dockre]]
+[[2. "Actually, I need to do something else in town."|downtownre]]@@
 <</linkreplace>>
 
 :: beach
 <<if $beachpermission>>
-You're at the beach!
+@@.env;You're at the beach!@@
 <<else>>
-At this time of day, the tide is high enough to cover the bottom third of the stairs. 
+@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
 
-The sight of stairs leading to a watery nothingness sends a chill down your spine.
+The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
 
-[[Return|dockre]]
+<u>[[Return|dockre]]</u>
 <</if>>
 
 
