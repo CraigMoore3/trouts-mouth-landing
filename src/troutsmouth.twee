@@ -17,10 +17,12 @@ Trout's Mouth Landing
 <<set $rr = false>>
 <<set $knowspill = false>>
 <<set $knowhammonds = false>>
+<<set $beachpermission = false>>
 <<set $map = false>>
 <<set $fishpole = false>>
 <<set $fishlure = false>>
 <<set $spyglass = false>>
+
 
 :: Start
 
@@ -48,11 +50,11 @@ Most of the buldings look abandoned. The silence, save for the sound of waves co
 
 In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
 
-Ahead, on my left, are some steps that stretch in the direction of the rocky beach. At this time of day, the tide is high enough to intercept the stairs. 
+Ahead, on my left, are some steps that stretch in the direction of the rocky beach. 
 
-The sight of stairs leading to a watery nothingness sends a chill down your spine.
+[[Head towards town|totown]]
 
-[[Head towards town|totown]].
+[[Try the steps to the beach.|beach]]
 
 [[What else is there?|dockdesc2]]
 
@@ -71,6 +73,13 @@ Its not a great idea to explore condemned Royal Merchant property.
 Not without a reason.
 
 [[Head towards town|totown]]
+
+:: nochancebeach
+At this time of day, the tide is high enough to cover the bottom third of the stairs. 
+
+The sight of stairs leading to a watery nothingness sends a chill down your spine.
+
+[[Return|dockdesc]]
 
 
 

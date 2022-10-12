@@ -1,0 +1,16 @@
+:: hammondinit
+The interior of the bar is very dark. Save for a few small windows,
+the only light in the space is sourced from archaic neon and incandescent bulbs above the bar and tables.
+
+A man in old Royal Navy trousers and a stained undershirt is asleep at one of the booths.
+
+<<linkreplace "Continue">>
+A muffled voice yells from behind a wall:
+<<type 55ms>>CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT<</type>>
+
+[[Sorry, sir, but I was hoping you could help me!|sorryhammond]]
+[[Say nothing|ghost]]
+[[Approach the sleeping man|pokethedrunk]]
+[[OKAY! (leave)|downtownre]]
+<</linkreplace>>
+
