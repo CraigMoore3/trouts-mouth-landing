@@ -52,7 +52,7 @@ He looks at me, brow furrowed.@@
 :: os3a
 @@.pcprintd;"I'm looking for my father."@@
 
-<<type 40ms>>@@.npcdialogue;Your father? Does he live here in Trout's Mouth?@@<</type>>
+<<type 40ms>>@@.npcdialogue; "Your father? Does he live here in Trout's Mouth?" @@<</type>>
 @@.pcdialogue;[[1. "I don't know."|os3b]]
 [[2. "I was hoping you could tell me that." (show photograph)|os3c]]@@
 
@@ -102,11 +102,11 @@ Had plenty like em through the shop over the years.@@<</type>>
 
 
 ::os3b2
-My parents always talked about how great is was here. Dad especially
+@@pcprintd;"My parents always talked about how great is was here. Dad especially."@@
 
-<<type 40ms>>“hmph. Sounds funny, hearing that now. 
+<<type 40ms>>@@npcdialogue;“hmph. Sounds funny, hearing that now. 
 Doesn’t take a genius to see this place ain’t what it used to be. 
-Any idea when they might’ve been here?”<</type>>
+Any idea when they might’ve been here?”@@<</type>>
 
 <<linkreplace "My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)">> \
 My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)
