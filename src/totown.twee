@@ -32,8 +32,8 @@ It is surprising to see someone so animated in such a frail body.@@
 
 <<type 40ms>>@@.npcdialogue;“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”@@<</type>> 
 \
-@@.pcdialogue;[[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]
-[[2. "I've come to deul, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]@@
+@@.pcdialogue;[[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]@@
+[[2. "I've come to deul, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]
 <</timed>>
 
 
