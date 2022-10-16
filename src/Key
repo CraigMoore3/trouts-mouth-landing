@@ -1,0 +1,13 @@
+NPC Speech
+    <<type 40ms>>@@.npcdialogue;   @@<</type>>
+
+Player Dialogue options
+    @@.pcdialogue;  [[]]  @@
+
+Player Dialogue Printed
+    @@.pcprintd;   @@
+
+Environment/context
+    @@.env;   @@
+
+
