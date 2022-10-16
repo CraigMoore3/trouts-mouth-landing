@@ -9,7 +9,7 @@
 Trout's Mouth Landing
 
 :: StoryMenu
-<<link "Inventory">><<goto inventory>><</link>>
+<<silently>><<link "Inventory">><<goto inventory>><</link>><</silently>>
 <<link "credits">> <<goto credits>> <</link>>
 
 

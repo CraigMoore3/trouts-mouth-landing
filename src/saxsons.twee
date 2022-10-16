@@ -8,10 +8,17 @@ Stepping in, it swings shut with a slam. Despite this, it doesn't close all the 
 I hadn’t realized how loud the caucaophony of wind and waves was until the door finally shuts behind me. 
 Above, a nest of ropes and nets snake their way up into the darkness towards a loft.
 
+One of the interior walls features a large [[framed map|map]].
+
 A stalky man stands behind a countertop.@@
 
 <u>[[1. Approach|os1]]
 [[2. I should get going (head towards town)|gondola]]</u>
+
+
+:: map
+<img src="framedmap.jpg">
+
 
 :: os1
 @@.env;I approach the man behind the counter.
