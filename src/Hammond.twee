@@ -37,10 +37,14 @@ The years have not been kind to him, although what he lacks in beauty is more th
 [[Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me.|langhelp|]]
 [[I'm sorry, are you closed?|uclosed]]
 [[Where is everyone?|whereseveryone]]
+
+[[I should get going.|downtownre]]
 <<else>>
 [[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
 [[I'm sorry, are you closed?|uclosed]]
 [[Where is everyone?|whereseveryone]]
+
+[[I should get going.|downtownre]]
 <</if>>
 
 <</timed>>
@@ -60,25 +64,86 @@ Hello! Name's Hammond. Langely Hammond. What can I do for you?<</type>>
 [[Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me|langhelp]]
 [[Are you closed?|uclosed]]
 [[Where is everyone?|whereseveryone]]
+
+
+[[I should get going.|downtownre]]
 <<else>>
 [[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
 [[I'm sorry, are you closed?|uclosed]]
 [[Where is everyone?|whereseveryone]]
+
+
+[[I should get going.|downtownre]]
 <</if>>
 <</timed>>
 
 :: langhelp
 @@.pcprintd;Sorry to bother you. I was talking with Oswald and he thought you might be able to help me.@@
 
+The man smiles at me, his eyes welcoming.
 
+Oswald! He's good people. Any friend of his is a friend of mine...
+What seems to be the issue?
+
+[[I'm looking for my father.]]
+[[]]
+
+
+[[I should get going.|downtownre]]
 
 :: langhelpelse
 @@.pcprintd;I'm looking for my father. I was hoping you might be able to help.@@
 
+The man peers at me with a solemn intensity.
+
+I see... How come you're looking for him in Trout's Mouth? Not a lot happening round here these days...
+
+[[He used to be a sailor for the Royal Merhcants. He talked about this place a lot.]]
+[[I'm starting to notice that...]]
+
+
+[[I should get going.|downtownre]]
 
 :: uclosed
 @@.pcprintd;Are you closed?@@
 
+No, no! Come in, make yourself at home. Only said that cause I thought you were one of them daydrinking types. 
+
+He motions towards the man sleeping at the booth.
+
+Don't like opening the daycare till the sun goes down if I can help it. 
+Anyways, what brings you in? Can't say I'm particularly used to new faces.
+
+<<if $knowhammonds>>
+[[I was talking with Oswald and he thought you might be able to help me|langhelp]]
+[[Where is everyone?|whereseveryone]]
+
+
+[[I should get going.|downtownre]]
+<<else>>
+[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
+[[Where is everyone?|whereseveryone]]
+
+
+[[I should get going.|downtownre]]
+<</if>>
+
+
 
 :: whereseveryone
 @@.pcprintd;Where is everyone?@@
+
+Ha!! Son, I hate to say it, but this <em>is</em> everyone. 
+It ain't hard to tell you're new around here... Can I help you with something?
+
+<<if $knowhammonds>>
+[[I was talking with Oswald and he thought you might be able to help me|langhelp]]
+
+
+[[I should get going.|downtownre]]
+<<else>>
+[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
+
+
+[[I should get going.|downtownre]]
+<</if>>
