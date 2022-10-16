@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://CC1600F3-94FB-4AB0-8341-D4F455E681D1// --><tw-storydata name="Trout&#39;s Mouth Landing" startnode="62" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="CC1600F3-94FB-4AB0-8341-D4F455E681D1" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">* {
+	<!-- UUID://CC1600F3-94FB-4AB0-8341-D4F455E681D1// --><tw-storydata name="Trout&#39;s Mouth Landing" startnode="66" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="CC1600F3-94FB-4AB0-8341-D4F455E681D1" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">* {
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large
 }
@@ -145,7 +145,6 @@ A muffled voice yells from behind a wall:
 
 [[Sorry, sir, but I was hoping you could help me!|sorryhammond]]
 [[Say nothing|ghost]]
-[[Approach the sleeping man|pokethedrunk]]
 [[OKAY! (leave)|downtownre]]
 &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="sorryhammond" tags="" position="225,100" size="100,100">Sorry, sir, but I was hoping you could help me!
 
@@ -162,16 +161,16 @@ The years have not been kind to him, although what he lacks in beauty is more th
 &lt;&lt;timed 1s&gt;&gt;&lt;&lt;type 40ms&gt;&gt;Oh... Welcome, stranger. Can&#39;t say I was expecting a new face. What can I do for you?&quot;&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;if $knowhammonds&gt;&gt;
-[[Sorry to bother you, Langely. I was talking with Oswald and he though you might be able to help me.]]
-[[I&#39;m sorry, are you closed?]]
-[[Where is everyone?]]
+[[Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me.|langhelp|]]
+[[I&#39;m sorry, are you closed?|uclosed]]
+[[Where is everyone?|whereseveryone]]
 &lt;&lt;else&gt;&gt;
-[[I&#39;m looking for my father. I was hoping you might be able to help.]]
-[[I&#39;m sorry, are you closed?]]
-[[Where is everyone?]]
+[[I&#39;m looking for my father. I was hoping you might be able to help.|langhelpelse]]
+[[I&#39;m sorry, are you closed?|uclosed]]
+[[Where is everyone?|whereseveryone]]
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="ghost" tags="" position="475,100" size="100,100">I stand in the doorway, silently.
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="ghost" tags="" position="475,100" size="100,100">@@.env;I stand in the doorway, silently.@@
 
 &lt;&lt;timed 1s t8n&gt;&gt;&lt;&lt;type 40ms&gt;&gt;MOTHER&#39;S SAKE, LEE! YOU TURNED DEAF &lt;em&gt;AND&lt;/em&gt; DUMB?&lt;&lt;/type&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
@@ -181,15 +180,15 @@ The years have not been kind to him, although what he lacks in beauty is more th
 Hello! Name&#39;s Hammond. Langely Hammond. What can I do for you?&lt;&lt;/type&gt;&gt;
 
 &lt;&lt;if $knowhammonds&gt;&gt;
-[[Sorry to bother you, Langely. I was talking with Oswald and he though you might be able to help me]]
-[[I&#39;m sorry, are you closed?]]
-[[Where is everyone?]]
+[[Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me|langhelp]]
+[[Are you closed?|uclosed]]
+[[Where is everyone?|whereseveryone]]
 &lt;&lt;else&gt;&gt;
-[[I&#39;m looking for my father. I was hoping you might be able to help.]]
-[[I&#39;m sorry, are you closed?]]
-[[Where is everyone?]]
+[[I&#39;m looking for my father. I was hoping you might be able to help.|langhelpelse]]
+[[I&#39;m sorry, are you closed?|uclosed]]
+[[Where is everyone?|whereseveryone]]
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="lighthouse" tags="" position="600,100" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="downtown1" tags="" position="725,100" size="100,100">Curiously, there&#39;s yet another sleeping old man in the booth at the top of the gondola track.
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="langhelp" tags="" position="600,100" size="100,100">@@.pcprintd;Sorry to bother you. I was talking with Oswald and he thought you might be able to help me.@@</tw-passagedata><tw-passagedata pid="6" name="langhelpelse" tags="" position="725,100" size="100,100">@@.pcprintd;I&#39;m looking for my father. I was hoping you might be able to help.@@</tw-passagedata><tw-passagedata pid="7" name="uclosed" tags="" position="850,100" size="100,100">@@.pcprintd;Are you closed?@@</tw-passagedata><tw-passagedata pid="8" name="whereseveryone" tags="" position="975,100" size="100,100">@@.pcprintd;Where is everyone?@@</tw-passagedata><tw-passagedata pid="9" name="lighthouse" tags="" position="1100,100" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="downtown1" tags="" position="1225,100" size="100,100">Curiously, there&#39;s yet another sleeping old man in the booth at the top of the gondola track.
 I have no idea who is paying them to be here, but it&#39;s good to know someone is there to let me back down the cliff.
 
 I step out of the gondola and let the old man nap.
@@ -202,7 +201,7 @@ That&#39;s where Oswald said I could find Hammond&#39;s Place. That&#39;s probab
 That&#39;s probably the best place to start looking. Hopefully some of the shops are open.
 &lt;&lt;/if&gt;&gt;
 
-[[Continue|downtown2]]</tw-passagedata><tw-passagedata pid="7" name="downtown2" tags="" position="850,100" size="100,100">Following the path from the gondola, I find myself in a large circular plaza.
+[[Continue|downtown2]]</tw-passagedata><tw-passagedata pid="11" name="downtown2" tags="" position="100,225" size="100,100">Following the path from the gondola, I find myself in a large circular plaza.
 Probably a marketplace or park in years past, the plaza now rests as a lifeless entryway to the winding streets of Trout&#39;s Mouth.
 
 With all of this space, I can only imagine what it would  have looked like in its prime.
@@ -223,9 +222,9 @@ The sign on the door simply reads “Inn.”
 [[Check out Hammond&#39;s Place|hammondinit]]
 [[Head towards the scenic overlook|overlook]]
 [[What else is around?]]
-[[Go back to the docks|gondoladown]]</tw-passagedata><tw-passagedata pid="8" name="downtownre" tags="" position="975,100" size="100,100">[[Check out Hammond&#39;s Place|hammondinit]]
+[[Go back to the docks|gondoladown]]</tw-passagedata><tw-passagedata pid="12" name="downtownre" tags="" position="225,225" size="100,100">[[Check out Hammond&#39;s Place|hammondinit]]
 [[Head towards the scenic overlook|overlook]]
-[[Go back to the docks|gondoladown]]</tw-passagedata><tw-passagedata pid="9" name="overlook" tags="" position="1100,100" size="100,100">So pretty!</tw-passagedata><tw-passagedata pid="10" name="inventory" tags="" position="1225,100" size="100,100">[[Photo|parentsphoto]] \
+[[Go back to the docks|gondoladown]]</tw-passagedata><tw-passagedata pid="13" name="overlook" tags="" position="350,225" size="100,100">So pretty!</tw-passagedata><tw-passagedata pid="14" name="inventory" tags="" position="475,225" size="100,100">[[Photo|parentsphoto]] \
 
 &lt;&lt;if $map&gt;&gt; 
 [[Map|map]] \
@@ -245,17 +244,17 @@ The sign on the door simply reads “Inn.”
 &lt;&lt;if $spyglass&gt;&gt;
 [[Spyglass|spyglass]] \
 &lt;&lt;else&gt;&gt;
-&lt;&lt;/if&gt;&gt; \</tw-passagedata><tw-passagedata pid="11" name="map" tags="" position="100,225" size="100,100">this is a map
+&lt;&lt;/if&gt;&gt; \</tw-passagedata><tw-passagedata pid="15" name="map" tags="" position="600,225" size="100,100">this is a map
 
-[[Return|inventory]]</tw-passagedata><tw-passagedata pid="12" name="parentsphoto" tags="" position="225,225" size="100,100">this is a photo of your parents
+[[Return|inventory]]</tw-passagedata><tw-passagedata pid="16" name="parentsphoto" tags="" position="725,225" size="100,100">this is a photo of your parents
 
-[[Return|inventory]]</tw-passagedata><tw-passagedata pid="13" name="lure" tags="" position="350,225" size="100,100">This is a handmade fishing lure
+[[Return|inventory]]</tw-passagedata><tw-passagedata pid="17" name="lure" tags="" position="850,225" size="100,100">This is a handmade fishing lure
 
-[[Return|inventory]]</tw-passagedata><tw-passagedata pid="14" name="pole" tags="" position="475,225" size="100,100">This is a handmade fishing pole
+[[Return|inventory]]</tw-passagedata><tw-passagedata pid="18" name="pole" tags="" position="975,225" size="100,100">This is a handmade fishing pole
 
-[[Return|inventory]]</tw-passagedata><tw-passagedata pid="15" name="spyglass" tags="" position="600,225" size="100,100">This is a spyglass
+[[Return|inventory]]</tw-passagedata><tw-passagedata pid="19" name="spyglass" tags="" position="1100,225" size="100,100">This is a spyglass
 
-[[Return|inventory]]</tw-passagedata><tw-passagedata pid="16" name="saxsons" tags="" position="725,225" size="100,100">@@.env;The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
+[[Return|inventory]]</tw-passagedata><tw-passagedata pid="20" name="saxsons" tags="" position="1225,225" size="100,100">@@.env;The wooden door of the shop feels remarkably heavy, I have to violently yank it from its closed position.
     
 Stepping in, it swings shut with a slam. Despite this, it doesn&#39;t close all the way.
 
@@ -267,7 +266,7 @@ Above, a nest of ropes and nets snake their way up into the darkness towards a l
 A stalky man stands behind a countertop.@@
 
 &lt;u&gt;[[1. Approach|os1]]
-[[2. I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="17" name="os1" tags="" position="850,225" size="100,100">@@.env;I approach the man behind the counter.
+[[2. I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="21" name="os1" tags="" position="100,350" size="100,100">@@.env;I approach the man behind the counter.
 
 His long unkept beard makes him look older than he really is. 
 
@@ -279,7 +278,7 @@ I&#39;ve never seen tools displayed to look so much like trophies.
 
 He looks at me, brow furrowed.@@
 
-&lt;u&gt;[[Continue|os2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="18" name="os2" tags="" position="975,225" size="100,100">&lt;&lt;type 40ms&gt;&gt;
+&lt;u&gt;[[Continue|os2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="22" name="os2" tags="" position="225,350" size="100,100">&lt;&lt;type 40ms&gt;&gt;
 @@.npcdialogue;&quot;Well hello, friend.&quot;@@
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;linkreplace &lt;u&gt;Continue&lt;/u&gt; &gt;&gt; \
@@ -291,24 +290,24 @@ He looks at me, brow furrowed.@@
 [[2. &quot;What is this place?&quot;|os4a]]
 [[3. &quot;Just browsing&quot;|os5a]]
 [[4. &quot;I should get going&quot;|gondola]]@@
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="os3a" tags="" position="1100,225" size="100,100">@@.pcprintd;&quot;I&#39;m looking for my father.&quot;@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="os3a" tags="" position="350,350" size="100,100">@@.pcprintd;&quot;I&#39;m looking for my father.&quot;@@
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue; &quot;Your father? Does he live here in Trout&#39;s Mouth?&quot; @@&lt;&lt;/type&gt;&gt;
 @@.pcdialogue;[[1. &quot;I don&#39;t know.&quot;|os3b]]
-[[2. &quot;I was hoping you could tell me that.&quot; (show photograph)|os3c]]@@</tw-passagedata><tw-passagedata pid="20" name="os3b" tags="" position="1225,225" size="100,100">@@.pcprintd;&quot;I don&#39;t know.&quot;@@
+[[2. &quot;I was hoping you could tell me that.&quot; (show photograph)|os3c]]@@</tw-passagedata><tw-passagedata pid="24" name="os3b" tags="" position="475,350" size="100,100">@@.pcprintd;&quot;I don&#39;t know.&quot;@@
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue;Can’t say that narrows it down. 
 What makes you think he’s here?
 Not a lot of folks still hanging around.@@&lt;&lt;/type&gt;&gt;
 @@.pcdialogue;[[1. &quot;This is where my parents met.&quot; (show photograph)|os3b1]]
-[[2. &quot;My parents always talked about how great it was here. Dad especially.&quot;|os3b2]]@@</tw-passagedata><tw-passagedata pid="21" name="os3b1" tags="" position="100,350" size="100,100">@@.pcprintd;&quot;This is where my parents met.&quot;@@
+[[2. &quot;My parents always talked about how great it was here. Dad especially.&quot;|os3b2]]@@</tw-passagedata><tw-passagedata pid="25" name="os3b1" tags="" position="600,350" size="100,100">@@.pcprintd;&quot;This is where my parents met.&quot;@@
 
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue;Ahh, I see... Royal Merchant types...
 Can&#39;t say I recognize them in particular.
 Had plenty like em through the shop over the years.@@&lt;&lt;/type&gt;&gt;
 
-@@.pcdialogue;[[&quot;Alright... Thanks anyways.&quot; (take the picture back)|os3b1cont]]@@</tw-passagedata><tw-passagedata pid="22" name="os3b1cont" tags="" position="225,350" size="100,100">@@.pcprintd;&quot;This is where my parents met.&quot;@@
+@@.pcdialogue;[[&quot;Alright... Thanks anyways.&quot; (take the picture back)|os3b1cont]]@@</tw-passagedata><tw-passagedata pid="26" name="os3b1cont" tags="" position="725,350" size="100,100">@@.pcprintd;&quot;This is where my parents met.&quot;@@
 
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue;Ahh, I see... Royal Merchant types...
@@ -320,7 +319,7 @@ Had plenty like em through the shop over the years.@@&lt;&lt;/type&gt;&gt;
 @@.env;Before you can go, he asks:@@
 &lt;&lt;type 70ms&gt;&gt;@@.npcdialogue;That&#39;s your ma on the left?@@&lt;&lt;/type&gt;&gt;
 @@.pcdialogue;[[1. &quot;Yes. She was born here. Moved away to be with my dad when she was 16.&quot;|os3c1]]
-[[2. &quot;Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.&quot;|os3c2]]@@</tw-passagedata><tw-passagedata pid="23" name="os3b2" tags="" position="350,350" size="100,100">@@pcprintd;&quot;My parents always talked about how great is was here. Dad especially.&quot;@@
+[[2. &quot;Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.&quot;|os3c2]]@@</tw-passagedata><tw-passagedata pid="27" name="os3b2" tags="" position="850,350" size="100,100">@@pcprintd;&quot;My parents always talked about how great is was here. Dad especially.&quot;@@
 
 &lt;&lt;type 40ms&gt;&gt;@@npcdialogue;“hmph. Sounds funny, hearing that now. 
 Doesn’t take a genius to see this place ain’t what it used to be. 
@@ -334,9 +333,9 @@ What&#39;s the deal with him then? Lost contact over the years or something?&lt;
 
 [[Something like that.|os3b3]]
 [[He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.|os3b4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="os3b3" tags="" position="475,350" size="100,100">Something like that. 
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="os3b3" tags="" position="975,350" size="100,100">Something like that. 
 
-&lt;&lt;type 40ms&gt;&gt;Gotcha. Apologies, friend. I don&#39;t mean to intrude.&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="os3b4" tags="" position="600,350" size="100,100">He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
+&lt;&lt;type 40ms&gt;&gt;Gotcha. Apologies, friend. I don&#39;t mean to intrude.&lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="os3b4" tags="" position="1100,350" size="100,100">He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
 
 &lt;&lt;type 40ms&gt;&gt;“I’m sorry, friend. I know how hard that can be.
 Feels like all the questions you never bothered to ask come flying at you in one big cluster. 
@@ -349,7 +348,7 @@ He takes a healthy swig, then offers it to me.
 
 [[Accept|yesbooze]]
 [[Refuse|nobooze]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="yesbooze" tags="" position="725,350" size="100,100">Tilting my head back, it burns at first, giving way to a satisfying warmth.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="yesbooze" tags="" position="1225,350" size="100,100">Tilting my head back, it burns at first, giving way to a satisfying warmth.
 
 What a kind gesture.
 
@@ -361,11 +360,11 @@ Thank you.
 [[I need help with something else|osnav]]
 [[Can I buy something?|shop]]
 [[I should get going (head towards town)|gondola]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="nobooze" tags="" position="850,350" size="100,100">He nods, raising the flask to a toast, and takes a swig for you.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="nobooze" tags="" position="100,475" size="100,100">He nods, raising the flask to a toast, and takes a swig for you.
 
 [[I need help with something else|osnav]]
 [[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="28" name="os3c" tags="" position="975,350" size="100,100">I was hoping you could tell me that (show photograph).
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="32" name="os3c" tags="" position="225,475" size="100,100">I was hoping you could tell me that (show photograph).
 
 He looks at it for a moment, thinking deeply, before setting the photograph on the counter.
 
@@ -378,7 +377,7 @@ Before you can go, he asks:
 [[Yes. She was born here. Moved away to be with my dad when she was 16|os3c1]]
 [[Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.|os3c2]]
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="os3c1" tags="" position="1100,350" size="100,100">Yes. She was born here. Moved away to be with my dad when she was 16.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="os3c1" tags="" position="350,475" size="100,100">Yes. She was born here. Moved away to be with my dad when she was 16.
 
 &lt;&lt;type 50ms&gt;&gt;&quot;Sounds bout right for Trout&#39;s Mouth. I&#39;m sorry I couldn&#39;t be more help to you, partner.
 I&#39;ve spent the better part of three decades standing in this here spot; I might not be equipped to help you.
@@ -386,7 +385,7 @@ Why don&#39;t you head up into town? I&#39;ll betcha Langley can point you in th
 He owns Hammond&#39;s&#39;s place, the local inn and bar. Ain&#39;t a drifter in Brosset who hasn&#39;t found himself down and out at Hammond&#39;s Place at some point.&quot;&lt;&lt;/type&gt;&gt;
 &lt;&lt;set $knowhammonds = true&gt;&gt; \
 
-[[Thank you, Oswald.|os3ty]]</tw-passagedata><tw-passagedata pid="30" name="os3c2" tags="" position="1225,350" size="100,100">Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.
+[[Thank you, Oswald.|os3ty]]</tw-passagedata><tw-passagedata pid="34" name="os3c2" tags="" position="475,475" size="100,100">Yes. She passed away last week. I guess that&#39;s part of why I&#39;m here.
 
 &lt;&lt;type 40ms&gt;&gt;“I’m sorry, friend. I know how hard that can be. Feels like all the questions you
 never bothered to ask come flying at you in one big cluster. Try not to let it get to you. 
@@ -395,13 +394,13 @@ Tell ya what... You should head up into town. No way a loner like me is gonna be
 Why don&#39;t you go talk to Langely? Owns the inn and bar downtown. You can&#39;t miss it.&lt;&lt;/type&gt;&gt;
 &lt;&lt;set $knowhammonds = true&gt;&gt;
 
-[[Thank you, Oswald.|os3ty]]</tw-passagedata><tw-passagedata pid="31" name="os3ty" tags="" position="100,475" size="100,100">Thank you, Oswald
+[[Thank you, Oswald.|os3ty]]</tw-passagedata><tw-passagedata pid="35" name="os3ty" tags="" position="600,475" size="100,100">Thank you, Oswald
 
 &lt;&lt;type 40ms&gt;&gt;Don&#39;t mention it.&lt;&lt;/type&gt;&gt;
 
 [[Can I buy something?|shop]]
 [[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="32" name="os4a" tags="" position="225,475" size="100,100">What is this place?
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="36" name="os4a" tags="" position="725,475" size="100,100">What is this place?
 
 &lt;&lt;type 40ms&gt;&gt;This here is Sax and Sons. 
 I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
@@ -411,15 +410,15 @@ Nets, lures, tackle, ropes and rods, all made by hand, right here on site.&lt;&l
 [[Anyways, I&#39;m looking for my father|os3a]]
 [[I need help with something else|osnav]]
 [[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="33" name="os4b" tags="" position="350,475" size="100,100">Get much business?
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="37" name="os4b" tags="" position="850,475" size="100,100">Get much business?
 
 &lt;&lt;type 40ms&gt;&gt;Hell... I knew that one was coming.
 Unfortunately, no. Not since the spill.&lt;&lt;/type&gt;&gt;
 [[The spill?|os4b1]]
-[[Why are you still here?|os4b2]]</tw-passagedata><tw-passagedata pid="34" name="os4b1" tags="" position="475,475" size="100,100">The spill?
+[[Why are you still here?|os4b2]]</tw-passagedata><tw-passagedata pid="38" name="os4b1" tags="" position="975,475" size="100,100">The spill?
 
 &lt;&lt;type 40ms&gt;&gt;&quot;Alright, now you&#39;re just pullin my leg.&quot;&lt;&lt;/type&gt;&gt;
-[[No, really. What is it?|spill]]</tw-passagedata><tw-passagedata pid="35" name="spill" tags="" position="600,475" size="100,100">No, really. What is it?
+[[No, really. What is it?|spill]]</tw-passagedata><tw-passagedata pid="39" name="spill" tags="" position="1100,475" size="100,100">No, really. What is it?
 
 &lt;&lt;type 45ms&gt;&gt;&quot;You really ain&#39;t from around here, are you?
 I&#39;m talkin about the Royal Merchant tanker that capsized just off the coast out there.
@@ -433,21 +432,21 @@ Bunch of the locals took it as a sign from The Mother.&lt;&lt;/type&gt;&gt;
 [[Interesting... Anyways, I&#39;m looking for my father.|os3a]]
 [[I need help with something else|osnav]]
 [[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="36" name="spill2" tags="" position="725,475" size="100,100">And you?
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="40" name="spill2" tags="" position="1225,475" size="100,100">And you?
 
 &lt;&lt;type 40ms&gt;&gt;Well... Let&#39;s just say I wasnt the first to fall in line with the Federation&#39;s patch-up job.
 Guess when it was all said and done the Royal Merchant Trade Feds thought it easiest to just pack the whole thing away;
 Moved our ports up North to Hayward. Offered big money and big oppertunity for townsfolk to follow suit. 
 A lot of em were gullible enough to listen.&lt;&lt;/type&gt;&gt;
 
-[[Except for you?|spill3]]</tw-passagedata><tw-passagedata pid="37" name="spill3" tags="" position="850,475" size="100,100">Except for you.
+[[Except for you?|spill3]]</tw-passagedata><tw-passagedata pid="41" name="spill3" tags="" position="100,600" size="100,100">Except for you.
 
 &lt;&lt;type 40ms&gt;&gt;Ha! That&#39;s right. Except for me and the rest of them stubborn bastards up in town.&lt;&lt;/type&gt;&gt;
 
 [[Well cudos to you. Anyways, I&#39;m looking for my father.|os3a]]
 [[Interesting... Can I buy something?|shop]]
 [[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="38" name="os4b2" tags="" position="975,475" size="100,100">Why are you still here?
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="42" name="os4b2" tags="" position="225,600" size="100,100">Why are you still here?
 
 &lt;&lt;type 35ms&gt;&gt; &quot;Guess I never saw any sense in trying to do something else.
 This is where I was raised. Son of a fisherman&#39;s son. 
@@ -457,27 +456,27 @@ Plus, I love making this stuff. I&#39;m pretty good at it, too.&quot;&lt;&lt;/ty
 [[Well cudos to you. Anyways, I&#39;m looking for my father.|os3a]]
 [[Can I buy something?|shop]]
 [[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="39" name="os5a" tags="" position="1100,475" size="100,100">Just browsing.
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="43" name="os5a" tags="" position="350,600" size="100,100">Just browsing.
 
 &lt;&lt;type 40ms&gt;&gt;Hahaha. Yeah, and I&#39;m the queen&#39;s son. 
 What can I help you with?&lt;&lt;/type&gt;&gt;
 [[I&#39;m looking for my father|os3a]]
 [[What is this place?|os4a]]
 [[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="40" name="shop" tags="" position="1225,475" size="100,100">Can I buy something?
+[[I should get going (head towards town)|gondola]]</tw-passagedata><tw-passagedata pid="44" name="shop" tags="" position="475,600" size="100,100">Can I buy something?
 
 &lt;&lt;type 40ms&gt;&gt;Anything you like.&lt;&lt;/type&gt;&gt;
 [[How about that map?|buymap]]
 [[How about that pole?|buypole]]
 [[How about this lure?|buylure]]
-[[I need help with something else|osnav]]</tw-passagedata><tw-passagedata pid="41" name="buymap" tags="" position="100,600" size="100,100">&lt;&lt;if $map&gt;&gt;
+[[I need help with something else|osnav]]</tw-passagedata><tw-passagedata pid="45" name="buymap" tags="" position="600,600" size="100,100">&lt;&lt;if $map&gt;&gt;
 Sorry, the one I sold you was my last.
 &lt;&lt;else&gt;&gt;
 Here&#39;s your map 
 &lt;&lt;set $map =true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Return|shop]]</tw-passagedata><tw-passagedata pid="42" name="buypole" tags="" position="225,600" size="100,100">&lt;&lt;if $fishpole&gt;&gt;
+[[Return|shop]]</tw-passagedata><tw-passagedata pid="46" name="buypole" tags="" position="725,600" size="100,100">&lt;&lt;if $fishpole&gt;&gt;
 Sorry pal, but I wouldn&#39;t feel right selling off another before you got to use the one you got.
 Call it a strange priciple of mine.
 &lt;&lt;else&gt;&gt;
@@ -485,10 +484,10 @@ Here&#39;s one. She&#39;s a beauty
 &lt;&lt;set $fishpole =true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Return|shop]]</tw-passagedata><tw-passagedata pid="43" name="buylure" tags="" position="350,600" size="100,100">A handcrafted lure, coming right up.
+[[Return|shop]]</tw-passagedata><tw-passagedata pid="47" name="buylure" tags="" position="850,600" size="100,100">A handcrafted lure, coming right up.
 &lt;&lt;set $fishlure =true&gt;&gt;
 
-[[Return|shop]]</tw-passagedata><tw-passagedata pid="44" name="osnav" tags="" position="475,600" size="100,100">&lt;&lt;type 40ms&gt;&gt;What else can I help you with?&lt;&lt;/type&gt;&gt;
+[[Return|shop]]</tw-passagedata><tw-passagedata pid="48" name="osnav" tags="" position="975,600" size="100,100">&lt;&lt;type 40ms&gt;&gt;What else can I help you with?&lt;&lt;/type&gt;&gt;
 &lt;u&gt;[[I&#39;m looking for my father|os3a]]&lt;/u&gt;
 
 &lt;u&gt;[[What is this place?|os4a]]&lt;/u&gt;
@@ -497,7 +496,7 @@ Here&#39;s one. She&#39;s a beauty
 
 &lt;u&gt;[[Just browsing|os5a]]&lt;/u&gt;
 
-&lt;u&gt;[[I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="45" name="saxtext" tags="" position="600,600" size="100,100">&lt;&lt;type 40ms&gt;&gt;Welcome back! What can I help you with?&lt;&lt;/type&gt;&gt;
+&lt;u&gt;[[I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="49" name="saxtext" tags="" position="1100,600" size="100,100">&lt;&lt;type 40ms&gt;&gt;Welcome back! What can I help you with?&lt;&lt;/type&gt;&gt;
 &lt;u&gt;[[I&#39;m looking for my father|os3a]]&lt;/u&gt;
 
 &lt;u&gt;[[What is this place?|os4a]]&lt;/u&gt;
@@ -506,21 +505,21 @@ Here&#39;s one. She&#39;s a beauty
 
 &lt;u&gt;[[Just browsing|os5a]]&lt;/u&gt;
 
-&lt;u&gt;[[I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="46" name="totown" tags="" position="725,600" size="100,100">@@.env;Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness.@@
+&lt;u&gt;[[I should get going (head towards town)|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="50" name="totown" tags="" position="1225,600" size="100,100">@@.env;Walking along the decaying wooden path, I notice one particular building that sticks out amongst the blighted emptiness.@@
 
 &lt;u&gt;[[1. What is it?|saxext]]
 [[2. Go inside|saxsons]]
-[[3. Continue towards town|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="47" name="saxext" tags="" position="850,600" size="100,100">@@.env;A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
+[[3. Continue towards town|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="51" name="saxext" tags="" position="100,725" size="100,100">@@.env;A two-story wooden structure that appears to stand significantly straighter than the surrounding buildings. You notice that the foundation has been reinforced with new lumber.
 I can barely make out a flip-sign that reads “open” through the salt-caked, sand-blasted glass.@@
 
 &lt;u&gt;[[1. Go inside|saxsons]]
-[[2. Continue towards town|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="48" name="gondola" tags="" position="975,600" size="100,100">@@.env;At the base of the cliff, a pair of large cables reach up towards the town center, two large Gondola cars on either side. 
+[[2. Continue towards town|gondola]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="52" name="gondola" tags="" position="225,725" size="100,100">@@.env;At the base of the cliff, a pair of large cables reach up towards the town center, two large Gondola cars on either side. 
 
 One of them is parked at the bottom, next to a small booth manned by a curious looking man.
 
 Asleep at the job with his nose in a book, tiny eyes peeking out from thick glasses, like they’re fashioned from the bottom of old root beer bottles.@@
 
-&lt;U&gt;[[Approach the booth|gondola2]]&lt;/U&gt;</tw-passagedata><tw-passagedata pid="49" name="gondola2" tags="" position="1100,600" size="100,100">@@.env;As I approach the man, he suddenly sits up with a jolt of energy.
+&lt;U&gt;[[Approach the booth|gondola2]]&lt;/U&gt;</tw-passagedata><tw-passagedata pid="53" name="gondola2" tags="" position="350,725" size="100,100">@@.env;As I approach the man, he suddenly sits up with a jolt of energy.
 \
 &lt;&lt;timed 1s t8n&gt;&gt;
 He belts, like a prideful sea dog after a barrel of ale.
@@ -531,19 +530,19 @@ It is surprising to see someone so animated in such a frail body.@@
 \
 @@.pcdialogue;[[1. &quot;I don&#39;t mean any trouble, sir. I was hoping to catch a ride up into town.&quot;|gondolakind]]@@
 [[2. &quot;I&#39;ve come to deul, old man. Turn yourself in or suffer the consequences.&quot;|gondolajoke1]]
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="gondolakind" tags="" position="1225,600" size="100,100">@@.pcprintd;&quot;I don&#39;t mean any trouble, sir. I was hoping to catch a ride up into town.&quot;@@
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="gondolakind" tags="" position="475,725" size="100,100">@@.pcprintd;&quot;I don&#39;t mean any trouble, sir. I was hoping to catch a ride up into town.&quot;@@
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue;CERTAINLY, ME BOY, CERTAINLY. I WAS ONLY PULLING YER LEG!
 Hope ye don&#39;t mind a bumpy ride.
 Yer all ready I presume?@@&lt;&lt;/type&gt;&gt;
 \
 @@.pcdialogue;[[1. &quot;Yes, let&#39;s go!&quot;|gondolaride]]
-[[2. &quot;Wait, there&#39;s something else I wanted to do at the docks.&quot;|dockre]]@@</tw-passagedata><tw-passagedata pid="51" name="gondolajoke1" tags="" position="100,725" size="100,100">@@.pcprintd;&quot;I&#39;ve come to deul, old man. Turn yourself in or suffer the consequences.&quot;@@
+[[2. &quot;Wait, there&#39;s something else I wanted to do at the docks.&quot;|dockre]]@@</tw-passagedata><tw-passagedata pid="55" name="gondolajoke1" tags="" position="600,725" size="100,100">@@.pcprintd;&quot;I&#39;ve come to deul, old man. Turn yourself in or suffer the consequences.&quot;@@
 
 @@.env;The man appears frozen. His eyes are impossible to read. I may have just poked the bear...
 No telling what the geezer is capable of...@@
 
-&lt;u&gt;[[Continue|gondolajoke2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="52" name="gondolajoke2" tags="" position="225,725" size="100,100">@@.env;Suddenly, he erupts with laughter.@@
+&lt;u&gt;[[Continue|gondolajoke2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="56" name="gondolajoke2" tags="" position="725,725" size="100,100">@@.env;Suddenly, he erupts with laughter.@@
 
  &lt;&lt;type 60ms&gt;&gt;@@.npcdialogue;BAAAHAHAAHAAAAHAA@@&lt;&lt;/type&gt;&gt; \
 
@@ -552,17 +551,17 @@ No telling what the geezer is capable of...@@
 &lt;&lt;type 50ms&gt;&gt;@@.npcdialogue;You got me there, son. Might surprise you to hear that I&#39;ve left my fighting days behind.
 Anywho, what can I do for you?@@&lt;&lt;/type&gt;&gt; &lt;&lt;/timed&gt;&gt;
 
-@@.pcdialogue;[[&quot;I was hoping to ride the gondola up to town&quot;|gondolajoke3]]@@</tw-passagedata><tw-passagedata pid="53" name="gondolajoke3" tags="" position="350,725" size="100,100">@@.pcdialogue;&quot;I was hoping to ride the gondola up to town.&quot;@@
+@@.pcdialogue;[[&quot;I was hoping to ride the gondola up to town&quot;|gondolajoke3]]@@</tw-passagedata><tw-passagedata pid="57" name="gondolajoke3" tags="" position="850,725" size="100,100">@@.pcdialogue;&quot;I was hoping to ride the gondola up to town.&quot;@@
 
 &lt;&lt;type 40ms&gt;&gt;@@.npcdialogue;Certainly, my boy. S&#39;long as you don&#39;t mind a bumpy ride!@@&lt;&lt;/type&gt;&gt; 
 
 @@.pcdialogue;[[1. &quot;Let&#39;s go!&quot;|gondolaride]]
-[[2. &quot;Wait, there&#39;s something else I wanted to do at the docks.:&quot;|dockre]]@@</tw-passagedata><tw-passagedata pid="54" name="gondolaride" tags="" position="475,725" size="100,100">@@.env;The electric motor of the gondola starts up with a mechanical warmth.
+[[2. &quot;Wait, there&#39;s something else I wanted to do at the docks.:&quot;|dockre]]@@</tw-passagedata><tw-passagedata pid="58" name="gondolaride" tags="" position="975,725" size="100,100">@@.env;The electric motor of the gondola starts up with a mechanical warmth.
 
 Soon after, the car begins to lift itself from the ground, towards the top of the cliff.@@
 
 &lt;u&gt;[[1. What&#39;s the view like?|gondolaview]]
-[[2. Enjoy the ride.|downtown1]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="55" name="gondolaview" tags="" position="600,725" size="100,100">&lt;&lt;if $knowspill&gt;&gt;
+[[2. Enjoy the ride.|downtown1]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="59" name="gondolaview" tags="" position="1100,725" size="100,100">&lt;&lt;if $knowspill&gt;&gt;
 @@.env;From this height, it is very easy to spot the capsized Royal Trade vessel, penetrating the surface of the water. 
 It&#39;s an eyesore, but the absoluteness of its existence compells me nonetheless. 
 
@@ -588,16 +587,16 @@ What the hell happened there?
 In less time than I had anticipated, the cable car slows to a halt.@@
 
 &lt;u&gt;[[Head downtown|downtown1]]&lt;/u&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="gondolaview2" tags="" position="725,725" size="100,100">@@.env;I also notice a small island next to the wreckage. It is home to a partially rundown lighthouse and an adjacent outdoor structure.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="gondolaview2" tags="" position="1225,725" size="100,100">@@.env;I also notice a small island next to the wreckage. It is home to a partially rundown lighthouse and an adjacent outdoor structure.
 
 I think that it&#39;s a shrine of some sort.
 
 In less time than I had anticipated, the cable car slows to a halt.@@
 
-&lt;u&gt;[[Head downtown|downtown1]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="57" name="dockre" tags="" position="850,725" size="100,100">&lt;u&gt;[[1. Check out the fishing shop|saxtext]]
+&lt;u&gt;[[Head downtown|downtown1]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="61" name="dockre" tags="" position="100,850" size="100,100">&lt;u&gt;[[1. Check out the fishing shop|saxtext]]
 [[2. Go back to the ferry dock|dockdesc]]
 [[3. Head down to the beach|beach]]
-[[4. Take the gondola to town|gondolaride]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="58" name="gondoladown" tags="" position="975,725" size="100,100">@@.env;Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
+[[4. Take the gondola to town|gondolaride]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="62" name="gondoladown" tags="" position="225,850" size="100,100">@@.env;Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
 
 Fortunately, he seems to have roused himself.@@
 
@@ -605,7 +604,7 @@ Fortunately, he seems to have roused himself.@@
 
 @@.pcdialogue;[[1. &quot;Yes, please!&quot;|dockre]]
 [[2. &quot;Actually, I need to do something else in town.&quot;|downtownre]]@@
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="beach" tags="" position="1100,725" size="100,100">&lt;&lt;if $beachpermission&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="beach" tags="" position="350,850" size="100,100">&lt;&lt;if $beachpermission&gt;&gt;
 @@.env;You&#39;re at the beach!@@
 &lt;&lt;else&gt;&gt;
 @@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
@@ -613,15 +612,15 @@ Fortunately, he seems to have roused himself.@@
 The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
 
 &lt;u&gt;[[Return|dockre]]&lt;/u&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="StoryMenu" tags="" position="1225,725" size="100,100">&lt;&lt;link &quot;Inventory&quot;&gt;&gt;&lt;&lt;goto inventory&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;credits&quot;&gt;&gt; &lt;&lt;goto credits&gt;&gt; &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="StoryInit" tags="" position="100,850" size="100,100">&lt;&lt;set $rr = false&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="StoryMenu" tags="" position="475,850" size="100,100">&lt;&lt;link &quot;Inventory&quot;&gt;&gt;&lt;&lt;goto inventory&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;credits&quot;&gt;&gt; &lt;&lt;goto credits&gt;&gt; &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="StoryInit" tags="" position="600,850" size="100,100">&lt;&lt;set $rr = false&gt;&gt;
 &lt;&lt;set $knowspill = false&gt;&gt;
 &lt;&lt;set $knowhammonds = false&gt;&gt;
 &lt;&lt;set $beachpermission = false&gt;&gt;
 &lt;&lt;set $map = false&gt;&gt;
 &lt;&lt;set $fishpole = false&gt;&gt;
 &lt;&lt;set $fishlure = false&gt;&gt;
-&lt;&lt;set $spyglass = false&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Start" tags="" position="225,850" size="100,100">@@.env;My parents look so young in the photo. 
+&lt;&lt;set $spyglass = false&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="Start" tags="" position="725,850" size="100,100">@@.env;My parents look so young in the photo. 
 
 I realize how little I recognize the faces that peer back at me. 
 
@@ -635,17 +634,17 @@ It&#39;s easy to say that I&#39;m here looking for my father, but its not that s
 
 I step off the ferry in search of a memory.@@
 
-&lt;u&gt;[[Continue|dockdesc]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="63" name="dockdesc" tags="" position="350,850" size="100,100">@@.env;Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
+&lt;u&gt;[[Continue|dockdesc]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="67" name="dockdesc" tags="" position="850,850" size="100,100">@@.env;Before me lies an intricate web of intersecting wooden pathways woven into a dense fishing village. 
 
-Most of the buldings look abandoned. The silence, save for the sound of waves colliding with the dock&#39;s supports below, is uncharacteristic for a community of this size.
+Most of the buildings look abandoned. The silence, save for the sound of waves colliding with the dock&#39;s supports below, is uncharacteristic for a community of this size.
 
-In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts mouth Landing.
+In the far distance I can see a pair of gondolas creeping up towards a cliffside town, probably the center of Trouts Mouth Landing.
 
 Ahead, on my left, are some steps that stretch in the direction of the rocky beach.@@
 
 &lt;u&gt;[[1. Head towards town|totown]]
 [[2. Try the steps to the beach.|nochancebeach]]
-[[3. What else is there?|dockdesc2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="64" name="dockdesc2" tags="" position="475,850" size="100,100">@@.env;Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
+[[3. What else is there?|dockdesc2]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="68" name="dockdesc2" tags="" position="975,850" size="100,100">@@.env;Looking carefully at the rest of the dock around me, I can begin to imagine how this place might have worked at one point.
 
 The ferry dropped me off in the remains of a fishing villiage. Probably local shops, built from cheap, local materials.
 
@@ -657,7 +656,7 @@ Its not a great idea to explore condemned Royal Merchant property.
 
 Not without a reason.@@
 
-&lt;u&gt;[[Head towards town|totown]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="65" name="nochancebeach" tags="" position="600,850" size="100,100">@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
+&lt;u&gt;[[Head towards town|totown]]&lt;/u&gt;</tw-passagedata><tw-passagedata pid="69" name="nochancebeach" tags="" position="1100,850" size="100,100">@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
 
 The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
 
