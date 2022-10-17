@@ -11,9 +11,9 @@ A man in old Royal Navy trousers and a stained undershirt is asleep at one of th
 @@.env;A muffled voice yells from behind a wall:@@
 <<type 55ms>>@@.npcdialogue;BAR'S CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT@@<</type>>
 
-@@.pcdialogue;[["Sorry, sir! I was hoping you could help me!"|sorryhammond]]@@
-<u>[[Say nothing|ghost]]</u>
-@@.pcdialogue;[["OKAY!" (leave)|downtownre]]@@
+@@.pcdialogue;[[1. "Sorry, sir! I was hoping you could help me!"|sorryhammond]]@@
+[[2. Say nothing|ghost]]
+[[3. "OKAY!" (leave)|downtownre]]@@
 <</linkreplace>>
 
 
@@ -35,17 +35,17 @@ The years have not been kind to him, although what he lacks in beauty is more th
 <<timed 1s>><<type 40ms>>@@.npcdialogue;"Oh... Welcome, stranger. Can't say I was expecting a new face. What can I do for you?"@@<</type>>
 
 <<if $knowhammonds>>
-@@.pcdialogue;[["Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me."|langhelp|]]
-[["I'm sorry, are you closed?"|uclosed]]
-[["Where is everyone?"|whereseveryone]]
+@@.pcdialogue;[[1. "Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me."|langhelp]]
+[[2. "I'm sorry, are you closed?"|uclosed]]
+[[3. "Where is everyone?"|whereseveryone]]
 
-[["I should get going."|downtownre]]@@
+[[4. "I should get going."|downtownre]]@@
 <<else>>
-@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
-[["I'm sorry, are you closed?"|uclosed]]
-[["Where is everyone?"|whereseveryone]]
+@@.pcdialogue;[[1. "I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[[2. "I'm sorry, are you closed?"|uclosed]]
+[[3. "Where is everyone?"|whereseveryone]]
 
-[["I should get going."|downtownre]]@@
+[[4. "I should get going."|downtownre]]@@
 <</if>>
 
 <</timed>>
@@ -62,19 +62,18 @@ The years have not been kind to him, although what he lacks in beauty is more th
 Hello! Name's Hammond. Langely Hammond. What can I do for you?"@@<</type>>
 
 <<if $knowhammonds>>
-@@.pcdialogue;[["Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me."|langhelp]]
-[["Are you closed?"|uclosed]]
-[["Where is everyone?"|whereseveryone]]
+@@.pcdialogue;[[1. "Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me."|langhelp]]
+[[2. "Are you closed?"|uclosed]]
+[[3. "Where is everyone?"|whereseveryone]]
 
+[[4. "I should get going."|downtownre]]@@
 
-[["I should get going."|downtownre]]@@
 <<else>>
-@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
-[["I'm sorry, are you closed?"|uclosed]]
-[["Where is everyone?"|whereseveryone]]
+@@.pcdialogue;[[1. "I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[[2. "I'm sorry, are you closed?"|uclosed]]
+[[3. "Where is everyone?"|whereseveryone]]
 
-
-[["I should get going."|downtownre]]@@
+[[4. "I should get going."|downtownre]]@@
 <</if>>
 <</timed>>
 
@@ -83,8 +82,8 @@ Hello! Name's Hammond. Langely Hammond. What can I do for you?"@@<</type>>
 
 @@.env;The man smiles at me, his eyes welcoming.@@
 
-<<type 40ms>>@@.npcdialogue;Oswald! He's good people. Any friend of his is a friend of mine...
-What seems to be the issue?@@<</type>>
+<<type 40ms>>@@.npcdialogue;"Oswald! He's good people. Any friend of his is a friend of mine...
+What seems to be the issue?"@@<</type>>
 
 @@.pcdialogue;[["I'm looking for my father."|langhelpelse]]@@
 
@@ -94,10 +93,10 @@ What seems to be the issue?@@<</type>>
 
 @@.env;The man peers at me with a solemn intensity.@@
 
-<<type 40ms>>@@.npcdialogue:"I see... How come you're looking for him in Trout's Mouth? Not a lot happening round here these days..."@@<</type>>
+<<type 40ms>>@@.npcdialogue;"I see... How come you're looking for him in Trout's Mouth? Not a lot happening round here these days..."@@<</type>>
 
-@@.pcdialogue;[["He used to be a sailor for the Royal Merhcants. He talked about this place a lot."|usedtobe]]
-[["I'm starting to notice that..."|noticethat]]@@
+@@.pcdialogue;[[1. "He used to be a sailor for the Royal Merhcants. He talked about this place a lot."|usedtobe]]
+[[2. "I'm starting to notice that..."|noticethat]]@@
 
 
 :: uclosed
@@ -111,12 +110,12 @@ What seems to be the issue?@@<</type>>
 Anyways, what brings you in? Can't say I'm particularly used to new faces."@@<</type>>
 
 <<if $knowhammonds>>
-@@.pcdialogue;[["I was talking with Oswald and he thought you might be able to help me"|langhelp]]
-[["Where is everyone?"|whereseveryone]]@@
+@@.pcdialogue;[[1. "I was talking with Oswald and he thought you might be able to help me"|langhelp]]
+[[2. "Where is everyone?"|whereseveryone]]@@
 
 <<else>>
-@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
-[["Where is everyone?"|whereseveryone]]@@
+@@.pcdialogue;[[1. "I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[[2. "Where is everyone?"|whereseveryone]]@@
 
 <</if>>
 <</timed>>
@@ -129,15 +128,14 @@ Anyways, what brings you in? Can't say I'm particularly used to new faces."@@<</
 It ain't hard to tell you're new around here... Can I help you with something?@@<</type>>
 
 <<if $knowhammonds>>
-@@.pcdialogue;[["I was talking with Oswald and he thought you might be able to help me"|langhelp]]
+@@.pcdialogue;[[1. "I was talking with Oswald and he thought you might be able to help me"|langhelp]]
 
+[[2. "I should get going."|downtownre]]@@
 
-[["I should get going."|downtownre]]@@
 <<else>>
-@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+@@.pcdialogue;[[1. "I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
 
-
-[["I should get going."|downtownre]]@@
+[[2. "I should get going."|downtownre]]@@
 <</if>>
 
 :: noticethat
@@ -146,15 +144,17 @@ It ain't hard to tell you're new around here... Can I help you with something?@@
 <<type 40ms>>@@.npcdialogue;"It's a sad thing, innit? Shes as beautiful a place as any...
 Can't say youre the first to come through here hoping to find someone."
 
-<<timed 1s>>"Trout's Mouth isn't usually too kind to the closure-seeking folks."@@<</type>>
+"Trout's Mouth isn't usually too kind to the closure-seeking folks."@@<</type>>
 
-@@.env;He pauses for a momment, contimplating his next question.@@
+<<timed 3s>>@@.env;He pauses for a momment, contimplating his next question.@@
+
 
 <<type 40ms>>@@.npcdialogue;"Would you call yourself superstitious?"@@<</type>>
-
-@@.pcdialogue;[["Yes."|yessuper]]
-[["No."|nosuper]]
-[["Why?"|whysuper]]@@
+<</timed>>\
+<<timed 4s>>
+@@.pcdialogue;[[1. "Yes."|yessuper]]
+[[2. "No."|nosuper]]
+[[3. "Why?"|whysuper]]@@
 <</timed>>
 
 
@@ -168,8 +168,8 @@ Not unless you're related to old Burgess over there..."@@<</type>>
 
 <<type 40ms>>@@.npcdialogue;"He says he was a sailor, I think he just likes the uniform..."@@<</type>>
 
-@@.pcdialogue;[["Are you sure you haven't seen him?" (Show photograph)|yousure]]
-[["Yeah... You're probably right."|youreright]]@@
+@@.pcdialogue;[[1. "Are you sure you haven't seen him?" (Show photograph)|yousure]]
+[[2. "Yeah... You're probably right."|youreright]]@@
 <</timed>>
 
 :: yousure
@@ -196,9 +196,9 @@ I'm sorry, son. I can tell this means a lot to you."@@<</type>>
 
 <<type 40ms>>@@.npcdialogue;"Pardon my asking, but would you consider yourself superstitious?"@@<</type>>
 
-@@.pcdialogue;[["Yes."|yessuper]]
-[["No."|nosuper]]
-[["Why?"|whysuper]]@@
+@@.pcdialogue;[[1. "Yes."|yessuper]]
+[[2. "No."|nosuper]]
+[[3. "Why?"|whysuper]]@@
 <</timed>>
 
 :: defeatedapology
@@ -211,9 +211,9 @@ To tell you the truth, you're hardly the first to come through those doors askin
 I hate turning you down outright, so let me ask you:
 Would you consider yourself to be superstituous?"@@<</type>>
 
-@@.pcdialogue;[["Yes."|yessuper]]
-[["No."|nosuper]]
-[["Why?"|whysuper]]@@
+@@.pcdialogue;[[1. "Yes."|yessuper]]
+[[2. "No."|nosuper]]
+[[3. "Why?"|whysuper]]@@
 
 :: whysuper
 @@.pcprintd;"Why?"@@
@@ -225,14 +225,15 @@ I think, as long as you'd like to believe in that sort of stuff, that I might be
 
 What do you think?"@@<</type>>
 
-@@.pcdialogue;[["Yes."|yessuper]]
-[["No."|nosuper]]@@
+@@.pcdialogue;[[1. "Yes."|yessuper]]
+[[2. "No."|nosuper]]@@
 
 :: yessuper
 @@.pcprintd;"Yes."@@
 
 <<type 40ms>>@@.npcdialogue;"I knew you were gonna be an interesting fellow the momment I saw you.
-Here's why I ask. Here in Trout's Mouth we have a sort of ritual. 
+Here's why I ask: 
+Here in Trout's Mouth we have a sort of ritual. 
 Whenever someone is searching for something they can't seem to get a grasp on, 
 we like to sail over to that island with the lighthouse."@@<</type>>
 
@@ -243,8 +244,9 @@ I'm afraid of heights, so I usually stick around The Mother Shrine. Talking to h
 If you think you might be interested, I'll give you a sweet deal on a room for when you get back. 
 Ferry will have left till the morning if you go."@@<</type>>
 
-@@.pcdialogue;[["That sounds great. Let's do it."|tomother]]
-[["I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@<</linkreplace>>
+@@.pcdialogue;[[1. "That sounds great. Let's do it."|tomother]]
+[[2. "I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@
+<</linkreplace>>
 
 
 :: nosuper
@@ -255,10 +257,10 @@ Ferry will have left till the morning if you go."@@<</type>>
 <<linkreplace <u>Continue</u> >><<type 40ms>>@@.npcdialogue;Well, the way I see it, its still early. 
 I'd offer you a room, but I can't imagine you want to stick around.
 You've got plenty of time to take in the sights before the ferry heads back out for the night.
-Care for a drink?"@@
+Care for a drink?"@@<</type>>
 
-@@.pcdialogue;[[I"'d love a drink."|lastdrink]]
-[["No, thanks. I should head back to the ferry."|nogo]]@@
+@@.pcdialogue;[[1. "I'd love a drink."|lastdrink]]
+[[2. "No, thanks. I should head back to the ferry."|nogo]]@@
 <</linkreplace>>
 
 :: lastdrink
@@ -266,20 +268,21 @@ Care for a drink?"@@
 
 @@.env;He pours two mugs of ale, offering a toast.@@
 
-<<timed 1s>><<type 40ms>>@@.npcdialogue;"To life's mysteries, and the world's utter contempt for solving them!"@@<</type>>
+<<timed 1s>><<type 40ms>>@@.npcdialogue;"To life's mysteries, and the world's utter contempt for solving them!"@@<</type>>\
 
-@@.env;You drink together. The hospitality makes you feel vulnerable.@@
+@@.env;You drink together. The hospitality makes me feel vulnerable.@@
 
-@@.pcdialogue;[["On second thought, I just might be feeling supersitious."|whatifyessuper]]
-[["Thanks, Langley. I should head back to the ferry."|nogo]]@@
+@@.pcdialogue;[[1. "On second thought, I just might be feeling supersitious."|whatifyessuper]]
+[[2. "Thanks, Langley. I should head back to the ferry."|nogo]]@@
 <</timed>>
 
 :: whatifyessuper
 @@.pcprintd;"On second thought, I just might be feeling supersitious."@@
 
 
-<<type 40ms>>@@.npcdialogue;"I knew you were gonna be an interesting fellow the momment I saw you.
-Here's why I asked in the first place. Here in Trout's Mouth we have a sort of ritual. 
+<<type 40ms>>@@.npcdialogue;"I knew you were gonna be an interesting fellow the moment I saw you.
+Here's why I asked in the first place:
+Here in Trout's Mouth we have a sort of ritual. 
 Whenever someone is searching for something they can't seem to get a grasp on, 
 we like to sail over to that island with the lighthouse."@@<</type>>
 
@@ -290,5 +293,6 @@ I'm afraid of heights, so I usually stick around The Mother Shrine. Talking to h
 If you think you might be interested, I'll give you a sweet deal on a room for when you get back. 
 Ferry will have left till the morning if you go."@@<</type>>
 
-@@.pcdialogue;[["That sounds great. Let's do it."|tomother]]
-[["I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@<</linkreplace>>
+@@.pcdialogue;[[1. "That sounds great. Let's do it."|tomother]]
+[[2. "I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@
+<</linkreplace>>

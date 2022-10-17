@@ -17,11 +17,7 @@ Trout's Mouth Landing
 <<set $rr = false>>
 <<set $knowspill = false>>
 <<set $knowhammonds = false>>
-<<set $beachpermission = false>>
 <<set $map = false>>
-<<set $fishpole = false>>
-<<set $fishlure = false>>
-<<set $spyglass = false>>
 
 
 :: Start
