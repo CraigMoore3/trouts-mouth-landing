@@ -18,7 +18,7 @@ A stalky man stands behind a countertop.@@
 
 :: map
 <<set $map =true>>
-<img src="../src/framedmap.jpg" alt="Map of Trout's Mouth Landing" width="796" height="556">
+<img src="framedmap.jpg" alt="Map of Trout's Mouth Landing" width="796" height="556">
 [[Return|previous()]]
 
 
