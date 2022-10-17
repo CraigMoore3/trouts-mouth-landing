@@ -33,7 +33,7 @@ It is surprising to see someone so animated in such a frail body.@@
 <<type 40ms>>@@.npcdialogue;“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”@@<</type>> 
 \
 [[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]
-[[2. "I've come to deul, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]
+[[2. "I've come to duel, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]
 <</timed>>
 
 
@@ -66,7 +66,7 @@ No telling what the geezer is capable of...@@
 <<type 50ms>>@@.npcdialogue;You got me there, son. Might surprise you to hear that I've left my fighting days behind.
 Anywho, what can I do for you?@@<</type>> <</timed>>
 
-@@.pcdialogue;[["I was hoping to ride the gondola up to town"|gondolajoke3]]@@
+@@.pcdialogue;[["I was hoping to ride the gondola up to town."|gondolajoke3]]@@
 
 :: gondolajoke3
 @@.pcdialogue;"I was hoping to ride the gondola up to town."@@
@@ -74,7 +74,7 @@ Anywho, what can I do for you?@@<</type>> <</timed>>
 <<type 40ms>>@@.npcdialogue;Certainly, my boy. S'long as you don't mind a bumpy ride!@@<</type>> 
 
 @@.pcdialogue;[[1. "Let's go!"|gondolaride]]
-[[2. "Wait, there's something else I wanted to do at the docks.:"|dockre]]@@
+[[2. "Wait, there's something else I wanted to do at the docks."|dockre]]@@
 
 
 

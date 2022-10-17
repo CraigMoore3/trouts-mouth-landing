@@ -5,7 +5,7 @@ Stepping in, it swings shut with a slam. Despite this, it doesn't close all the 
 
  This too requires me to yank it. 
 
-I hadn’t realized how loud the caucaophony of wind and waves was until the door finally shuts behind me. 
+I hadn’t realized how loud the cacophony of wind and waves was until the door finally shuts behind me. 
 Above, a nest of ropes and nets snake their way up into the darkness towards a loft.
 
 One of the interior walls features a large [[framed map|map]].
@@ -114,7 +114,7 @@ Any idea when they might’ve been here?”@@<</type>>
 @@.pcdialogue;[["My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF." (show photograph.)|os3b2cont]]@@
 
 :: os3b2cont
-"My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF." 
+@@pcprintd;"My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF."@@
 
 <<type 40ms>>@@.npcdialogue;I see, I see. Lots of trader families have passed through over the years.
 What's the deal with him then? Lost contact over the years or something?@@<</type>>
@@ -124,153 +124,153 @@ What's the deal with him then? Lost contact over the years or something?@@<</typ
 
 
 :: os3b4
-He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
+@@.pcprintd;"He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much."@@
 
-<<type 40ms>>“I’m sorry, friend. I know how hard that can be.
+<<type 40ms>>@@.npcdialogue;“I’m sorry, friend. I know how hard that can be.
 Feels like all the questions you never bothered to ask come flying at you in one big cluster. 
 Try not to let it get to you. I think you’re making the right call, coming here and all. 
-Here’s to finding some kinda peace<</type>> 
+Here’s to finding some kinda peace."@@<</type>> 
 
-<<linkreplace "Continue">>He reaches into his coat pocket, retrieving a flask.
+<<linkreplace <u>Continue</u> >>@@.env;He reaches into his coat pocket, retrieving a flask.
 
-He takes a healthy swig, then offers it to me.
+He takes a healthy swig, then offers it to me.@@
 
-[[Accept|yesbooze]]
-[[Refuse|nobooze]]
+<u>[[Accept|yesbooze]]
+[[Refuse|nobooze]]</u>
 <</linkreplace>>
 
 :: yesbooze
-Tilting my head back, it burns at first, giving way to a satisfying warmth.
+@@.env;Tilting my head back, it burns at first, giving way to a satisfying warmth.
 
-What a kind gesture.
+What a kind gesture.@@
 
 <<linkreplace "Thank you">> \
-Thank you.
+@@.pcprintd;"Thank you."@@
 
-<<type 40ms>>Don't mention it<</type>>
+<<type 40ms>>@@.npcdialogue;"Don't mention it."@@<</type>>
 
-[[I need help with something else|osnav]]
+@@.pcdialogue;[["I need help with something else."|osnav]]
 [["I should get going." (head towards town)|gondola]]@@
 <</linkreplace>>
 
 :: nobooze
-He nods, raising the flask to a toast, and takes a swig for you.
+@@.env;He nods, raising the flask to a toast, and takes a swig for you.@@
 
-[[I need help with something else|osnav]]
-[["I should get going." (head towards town)|gondola]]@@
+@@.pcdialogue;[[1. "I need help with something else."|osnav]]
+[[2. "I should get going." (head towards town)|gondola]]@@
 
 
 
 
 
 :: os3c
-I was hoping you could tell me that (show photograph).
+@@.pcprintd;"I was hoping you could tell me that" (show photograph).@@
 
-He looks at it for a moment, thinking deeply, before setting the photograph on the counter.
+@@.env;He looks at it for a moment, thinking deeply, before setting the photograph on the counter.@@
 
-<<linkreplace "Continue">> <<set $rr = true>> \
-<<type 40ms>>Can't say I recognize em. Had plenty of Royal merchants through the shop over the years.
-Always gave em a handsome deal on poles for their R&R.<</type>>
-<<linkreplace "<u>Alright... Thanks anyway (take the picture back)</u>">> \
-Before you can go, he asks:
-<<type 70ms>>That's your ma on the left?<</type>>
-[[Yes. She was born here. Moved away to be with my dad when she was 16|os3c1]]
-[[Yes. She passed away last week. I guess that's part of why I'm here.|os3c2]]
+<<linkreplace <u>Continue</u> >> <<set $rr = true>> \
+<<type 40ms>>@@.npcdialogue;"Can't say I recognize em. Had plenty of Royal merchants through the shop over the years.
+Always gave em a handsome deal on poles for their R&R."@@<</type>>
+<<linkreplace "Alright... Thank's anyway (take the picture back)">> \
+@@.env;Before you can go, he asks:@@
+<<type 70ms>>@@.npcdialogue;"That's your ma on the left?"@@<</type>>
+@@.pcdialogue;[[1. "Yes. She was born here. Moved away to be with my dad when she was 16."|os3c1]]
+[[2. "Yes. She passed away last week. I guess that's part of why I'm here."|os3c2]]@@
 <</linkreplace>>
 <</linkreplace>>
 
 :: os3c1
-Yes. She was born here. Moved away to be with my dad when she was 16.
+@@.pcprintd;"Yes. She was born here. Moved away to be with my dad when she was 16."@@
 
-<<type 50ms>>"Sounds bout right for Trout's Mouth. I'm sorry I couldn't be more help to you, partner.
+<<type 50ms>>@@.npcdialogue;"Sounds bout right for Trout's Mouth. I'm sorry I couldn't be more help to you, partner.
 I've spent the better part of three decades standing in this here spot; I might not be equipped to help you.
 Why don't you head up into town? I'll betcha Langley can point you in the right direction.
-He owns Hammond's's place, the local inn and bar. Ain't a drifter in Brosset who hasn't found himself down and out at Hammond's Place at some point."<</type>>
+He owns Hammond's's place, the local inn and bar. Ain't a drifter in Brosset who hasn't found himself down and out at Hammond's Place at some point."@@<</type>>
 <<set $knowhammonds = true>> \
 
-[[Thank you, Oswald.|os3ty]]
+@@.pcdialogue;[["Thank you, Oswald."|os3ty]]@@
 
 :: os3c2
-Yes. She passed away last week. I guess that's part of why I'm here.
+@@.pcprintd;"Yes. She passed away last week. I guess that's part of why I'm here.""
 
-<<type 40ms>>“I’m sorry, friend. I know how hard that can be. Feels like all the questions you
+<<type 40ms>>@@.npcdialogue;“I’m sorry, friend. I know how hard that can be. Feels like all the questions you
 never bothered to ask come flying at you in one big cluster. Try not to let it get to you. 
 I think you’re making the right call, coming here and all. 
 Tell ya what... You should head up into town. No way a loner like me is gonna be able to offer much help to you.
-Why don't you go talk to Langely? Owns the inn and bar downtown. You can't miss it.<</type>>
+Why don't you go talk to Langely? Owns the inn and bar downtown. You can't miss it."@@<</type>>
 <<set $knowhammonds = true>>
 
-[[Thank you, Oswald.|os3ty]]
+@@.pcdialogue;[["Thank you, Oswald."|os3ty]]@@
 
 
 :: os3ty
-Thank you, Oswald
+"Thank you, Oswald"
 
-<<type 40ms>>Don't mention it.<</type>>
+<<type 40ms>>@@.npcdialogue;"Don't mention it."@@<</type>>
 
-[[I need help with something else|osnav]]
-[["I should get going." (head towards town)|gondola]]@@
+@@.pcdialogue;[[1. "I need help with something else."|osnav]]
+[[2. "I should get going." (head towards town)|gondola]]@@
 
 :: os4a
-What is this place?
+@@.pcprintd;"What is this place?"@@
 
-<<type 40ms>>This here is Sax and Sons. 
+<<type 40ms>>@@.npcdialogue;"This here is Sax and Sons. 
 I’m Oswald Sax Jr. Its my Pa’s place. Been working here since I was tall enough to see over the counter. 
 We’re Trout’s Mouth’s prime destination for premium hand-made fishing equipment. 
-Nets, lures, tackle, ropes and rods, all made by hand, right here on site.<</type>>
-[[Get much business?|os4b]]
-[[Anyways, I'm looking for my father|os3a]]
-[[I need help with something else|osnav]]
-[["I should get going." (head towards town)|gondola]]@@
+Nets, lures, tackle, ropes and rods, all made by hand, right here on site."@@<</type>>
+@@.pcdialogue;[[1. "Get much business?"|os4b]]
+[[2. "Anyways, I'm looking for my father."|os3a]]
+[[3. "I need help with something else."|osnav]]
+[[4. "I should get going." (head towards town)|gondola]]@@
 
 ::os4b
-Get much business?
+@@.pcprintd;"Get much business?"@@
 
-<<type 40ms>>Hell... I knew that one was coming.
-Unfortunately, no. Not since the spill.<</type>>
-[[The spill?|os4b1]]
-[[Why are you still here?|os4b2]]
+<<type 40ms>>@@.npcdialogue;"Hell... I knew that one was coming.
+Unfortunately, no. Not since the spill."@@<</type>>
+@@.pcdialogue;[[1. "The spill?"|os4b1]]
+[[2. "Why are you still here?"|os4b2]]@@
 
 :: os4b1
-The spill?
+@@.pcprintd;"The spill?"@@
 
-<<type 40ms>>"Alright, now you're just pullin my leg."<</type>>
-[[No, really. What is it?|spill]]
+<<type 40ms>>@@.npcdialogue;"Alright, now you're just pullin my leg."@@<</type>>
+@@.pcdialogue;[["No, really. What is it?"|spill]]@@
 
 :: spill
-No, really. What is it?
+@@.pcprintd;"No, really. What is it?"@@
 
-<<type 45ms>>"You really ain't from around here, are you?
+<<type 45ms>>@@.npcdialogue;"You really ain't from around here, are you?
 I'm talkin about the Royal Merchant tanker that capsized just off the coast out there.
 You had to've seen it if you took the ferry in...
 
 Whole surface of the water burned for two days. Killed damn near every fish this side of Dover.
-Bunch of the locals took it as a sign from The Mother.<</type>>
+Bunch of the locals took it as a sign from The Mother."@@<</type>>
 <<set $knowspill = true>>
 
-[[And you?|spill2]]
-[[Interesting... Anyways, I'm looking for my father.|os3a]]
-[[I need help with something else|osnav]]
-[["I should get going." (head towards town)|gondola]]@@
+@@.pcdialogue;[[1. "And you?"|spill2]]
+[[2. "Interesting... Anyways, I'm looking for my father."|os3a]]
+[[3. "I need help with something else."|osnav]]
+[[4. "I should get going." (head towards town)|gondola]]@@
 
 :: spill2
-And you?
+@@.pcprintd;"And you?"@@
 
-<<type 40ms>>Well... Let's just say I wasnt the first to fall in line with the Federation's patch-up job.
+<<type 40ms>>@@.npcdialogue;"Well... Let's just say I wasn't the first to fall in line with the Federation's patch-up job.
 Guess when it was all said and done the Royal Merchant Trade Feds thought it easiest to just pack the whole thing away;
 Moved our ports up North to Hayward. Offered big money and big oppertunity for townsfolk to follow suit. 
-A lot of em were gullible enough to listen.<</type>>
+A lot of em were gullible enough to listen."@@<</type>>
 
-[[Except for you?|spill3]]
+@@.pcdialogue;[["Except for you?"|spill3]]@@
 
 :: spill3
-Except for you.
+@@.pcprintd;"Except for you?"@@
 
-<<type 40ms>>Ha! That's right. Except for me and the rest of them stubborn bastards up in town.<</type>>
+<<type 40ms>>@@.npcdialogue;"Ha! That's right. Except for me and the rest of them stubborn bastards up in town."<</type>>
 
 @@.pcdialogue;[[1. "Well cudos to you. Anyways, I'm looking for my father."|os3a]]
 [[2. "I need help with something else."|osnav]]
-[["I should get going." (head towards town)|gondola]]@@
+[[3. "I should get going." (head towards town)|gondola]]@@
 
 
 ::os4b2
@@ -303,10 +303,10 @@ What can I help you with?"@@<</type>>
 :: osnav
 <<type 40ms>>@@.npcdialogue;"What else can I help you with?"@@<</type>>
 
-@@.pcdialogue;<u>[[1. "I'm looking for my father."|os3a]]</u>
-<u>[[2. "What is this place?"|os4a]]</u>
-<u>[[3. "Just browsing."|os5a]]</u>
-<u>[[4. "I should get going."" (head towards town)|gondola]]</u>@@
+@@.pcdialogue;[[1. "I'm looking for my father."|os3a]]
+[[2. "What is this place?"|os4a]]
+[[3. "Just browsing."|os5a]]
+[[4. "I should get going." (head towards town)|gondola]]@@
 
 
 :: saxtext
