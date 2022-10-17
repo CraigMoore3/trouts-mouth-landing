@@ -1,5 +1,5 @@
 :: downtown1
-Curiously, there's yet another sleeping old man in the booth at the top of the gondola track.
+@@.env;Curiously, there's yet another sleeping old man in the booth at the top of the gondola track.
 I have no idea who is paying them to be here, but it's good to know someone is there to let me back down the cliff.
 
 I step out of the gondola and let the old man nap.
@@ -7,43 +7,36 @@ I step out of the gondola and let the old man nap.
 Ahead, I notice several signs pointing towards the town square.
 \
 <<if $knowhammonds>>
-That's where Oswald said I could find Hammond's Place. That's probably a decent place to start looking.
+@@.env;That's where Oswald said I could find Hammond's Place. That's probably a decent place to start looking.@@
 <<else>>
-That's probably the best place to start looking. Hopefully some of the shops are open.
+@@.env;That's probably the best place to start looking. Hopefully some of the shops are open.@@
 <</if>>
 
-[[Continue|downtown2]]
+<u>[[Continue|downtown2]]</u>
 
 :: downtown2
-Following the path from the gondola, I find myself in a large circular plaza.
+@@.env;Following the path from the gondola, I find myself in a large circular plaza.
 Probably a marketplace or park in years past, the plaza now rests as a lifeless entryway to the winding streets of Trout's Mouth.
 
 With all of this space, I can only imagine what it would  have looked like in its prime.
 There’s even a small bandstand for live performers. It mostly feels sad now. 
 A lot of care went into making this a communal space. 
 
-Near the bandstand lies a pathway that leads out of the town's center, winding back towards the coast. 
-Before it sits a sign which reads "Scenic Overlook"
 
 The only building in the center that isn’t boarded up or hollowed out is a cozy looking joint with a swinging wooden sign. 
-It’s very worn down, so I can barely make out the word “Hammond’s Place.”
+It’s very worn down, so I can barely make out the word “Hammond’s Place.”@@
 <<if $knowhammonds>> 
-This must be the place Oswald mentioned.
+@@.env;This must be the place Oswald mentioned.@@
 <<else>>
-The sign on the door simply reads “Inn.”
+@@.env;The sign on the door simply reads “Inn.”@@
 <</if>>
 
-[[Check out Hammond's Place|hammondinit]]
-[[Head towards the scenic overlook|overlook]]
-[[What else is around?]]
-[[Go back to the docks|gondoladown]]
+<u>[[Check out Hammond's Place|hammondinit]]</u>
+<u>[[Go back to the docks|gondoladown]]</u>
 
 
 
 :: downtownre
-[[Check out Hammond's Place|hammondinit]]
-[[Head towards the scenic overlook|overlook]]
-[[Go back to the docks|gondoladown]]
+<u>[[Check out Hammond's Place|hammondinit]]</u>
+<u>[[Go back to the docks|gondoladown]]</u>
 
-:: overlook
-So pretty!
