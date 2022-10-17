@@ -17,7 +17,9 @@ A stalky man stands behind a countertop.@@
 
 
 :: map
-<img src="framedmap.jpg">
+<<set $map =true>>
+<img src="../src/framedmap.jpg" alt="Map of Trout's Mouth Landing" width="796" height="556">
+[[Return|previous()]]
 
 
 :: os1
@@ -66,42 +68,36 @@ He looks at me, brow furrowed.@@
 :: os3b
 @@.pcprintd;"I don't know."@@
 
-<<type 40ms>>@@.npcdialogue;Can’t say that narrows it down. 
+<<type 40ms>>@@.npcdialogue;"Can’t say that narrows it down. 
 What makes you think he’s here?
-Not a lot of folks still hanging around.@@<</type>>
+Not a lot of folks still hanging around."@@<</type>>
 @@.pcdialogue;[[1. "This is where my parents met." (show photograph)|os3b1]]
 [[2. "My parents always talked about how great it was here. Dad especially."|os3b2]]@@
-
-
-
-
 
 
 :: os3b1
 @@.pcprintd;"This is where my parents met."@@
 
 
-<<type 40ms>>@@.npcdialogue;Ahh, I see... Royal Merchant types...
+<<type 40ms>>@@.npcdialogue;"Ahh, I see... Royal Merchant types...
 Can't say I recognize them in particular.
-Had plenty like em through the shop over the years.@@<</type>>
+Had plenty like em through the shop over the years."@@<</type>>
 
 @@.pcdialogue;[["Alright... Thanks anyways." (take the picture back)|os3b1cont]]@@
-
-
 
 
 :: os3b1cont
 @@.pcprintd;"This is where my parents met."@@
 
 
-<<type 40ms>>@@.npcdialogue;Ahh, I see... Royal Merchant types...
+<<type 40ms>>@@.npcdialogue;"Ahh, I see... Royal Merchant types...
 Can't say I recognize them in particular.
-Had plenty like em through the shop over the years.@@<</type>>
+Had plenty like em through the shop over the years."@@<</type>>
 
 @@.pcprintd;"Alright... Thanks anyways." (take the picture back)@@
 
 @@.env;Before you can go, he asks:@@
-<<type 70ms>>@@.npcdialogue;That's your ma on the left?@@<</type>>
+<<type 70ms>>@@.npcdialogue;"That's your ma on the left?"@@<</type>>
 @@.pcdialogue;[[1. "Yes. She was born here. Moved away to be with my dad when she was 16."|os3c1]]
 [[2. "Yes. She passed away last week. I guess that's part of why I'm here."|os3c2]]@@
 
@@ -115,20 +111,17 @@ Had plenty like em through the shop over the years.@@<</type>>
 Doesn’t take a genius to see this place ain’t what it used to be. 
 Any idea when they might’ve been here?”@@<</type>>
 
-<<linkreplace "My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)">> \
-My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF (show photograph.)
+@@.pcdialogue;[["My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF." (show photograph.)|os3b2cont]]@@
 
-<<type 40ms>>I see, I see. Lots of trader families have passed through over the years.
-What's the deal with him then? Lost contact over the years or something?<</type>>
+:: os3b2cont
+"My mother was born here. My father came here for work right after the war. He was a sailor for the RMTF." 
 
-[[Something like that.|os3b3]]
-[[He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.|os3b4]]
-<</linkreplace>>
+<<type 40ms>>@@.npcdialogue;I see, I see. Lots of trader families have passed through over the years.
+What's the deal with him then? Lost contact over the years or something?@@<</type>>
 
-:: os3b3
-Something like that. 
+@@.pcdialogue;[["He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much."|os3b4]]@@
 
-<<type 40ms>>Gotcha. Apologies, friend. I don't mean to intrude.<</type>>
+
 
 :: os3b4
 He walked out on us when I was eight. When my mom passed, the lack of closure got to be too much.
@@ -157,17 +150,14 @@ Thank you.
 <<type 40ms>>Don't mention it<</type>>
 
 [[I need help with something else|osnav]]
-[[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]
+[["I should get going." (head towards town)|gondola]]@@
 <</linkreplace>>
 
 :: nobooze
 He nods, raising the flask to a toast, and takes a swig for you.
 
 [[I need help with something else|osnav]]
-[[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]
-
+[["I should get going." (head towards town)|gondola]]@@
 
 
 
@@ -218,10 +208,8 @@ Thank you, Oswald
 
 <<type 40ms>>Don't mention it.<</type>>
 
-[[Can I buy something?|shop]]
 [[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]
-
+[["I should get going." (head towards town)|gondola]]@@
 
 :: os4a
 What is this place?
@@ -233,8 +221,7 @@ Nets, lures, tackle, ropes and rods, all made by hand, right here on site.<</typ
 [[Get much business?|os4b]]
 [[Anyways, I'm looking for my father|os3a]]
 [[I need help with something else|osnav]]
-[[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]
+[["I should get going." (head towards town)|gondola]]@@
 
 ::os4b
 Get much business?
@@ -264,9 +251,7 @@ Bunch of the locals took it as a sign from The Mother.<</type>>
 [[And you?|spill2]]
 [[Interesting... Anyways, I'm looking for my father.|os3a]]
 [[I need help with something else|osnav]]
-[[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]
-
+[["I should get going." (head towards town)|gondola]]@@
 
 :: spill2
 And you?
@@ -283,103 +268,51 @@ Except for you.
 
 <<type 40ms>>Ha! That's right. Except for me and the rest of them stubborn bastards up in town.<</type>>
 
-[[Well cudos to you. Anyways, I'm looking for my father.|os3a]]
-[[Interesting... Can I buy something?|shop]]
-[[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]
-
-
-
-
-
-
+@@.pcdialogue;[[1. "Well cudos to you. Anyways, I'm looking for my father."|os3a]]
+[[2. "I need help with something else."|osnav]]
+[["I should get going." (head towards town)|gondola]]@@
 
 
 ::os4b2
-Why are you still here?
+@@.pcprintd;"Why are you still here?"@@
 
-<<type 35ms>> "Guess I never saw any sense in trying to do something else.
+<<type 35ms>>@@.npcdialogue;"Guess I never saw any sense in trying to do something else.
 This is where I was raised. Son of a fisherman's son. 
 Pa worked his whole life to build this place. How could I let that all go to waste?
-Plus, I love making this stuff. I'm pretty good at it, too."<</type>>
+Plus, I love making this stuff. I'm pretty good at it, too."@@<</type>>
 
-[[Well cudos to you. Anyways, I'm looking for my father.|os3a]]
-[[Can I buy something?|shop]]
-[[I need help with something else|osnav]]
-[[I should get going (head towards town)|gondola]]
+@@.pcdialogue;[[1. "Well cudos to you. Anyways, I'm looking for my father."|os3a]]
+[[2. "I need help with something else."|osnav]]
+[[3. "I should get going." (head towards town)|gondola]]@@
 
 ::os5a
-Just browsing.
+@@.pcprintd;"Just browsing."@@
 
-<<type 40ms>>Hahaha. Yeah, and I'm the queen's son. 
-What can I help you with?<</type>>
-[[I'm looking for my father|os3a]]
-[[What is this place?|os4a]]
-[[Can I buy something?|shop]]
-[[I should get going (head towards town)|gondola]]
+<<type 40ms>>@@.npcdialogue;"Hahaha. Yeah, and I'm the queen's son. 
+What can I help you with?"@@<</type>>
 
-
-
-:: shop
-Can I buy something?
-
-<<type 40ms>>Anything you like.<</type>>
-[[How about that map?|buymap]]
-[[How about that pole?|buypole]]
-[[How about this lure?|buylure]]
-[[I need help with something else|osnav]]
-
-:: buymap
-<<if $map>>
-Sorry, the one I sold you was my last.
-<<else>>
-Here's your map 
-<<set $map =true>>
-<</if>>
-
-[[Return|shop]]
+@@.pcdialogue;[[1. "I'm looking for my father."|os3a]]
+[[2. "What is this place?"|os4a]]
+[[3. "I should get going." (head towards town)|gondola]]@@
 
 
-:: buypole
-<<if $fishpole>>
-Sorry pal, but I wouldn't feel right selling off another before you got to use the one you got.
-Call it a strange priciple of mine.
-<<else>>
-Here's one. She's a beauty
-<<set $fishpole =true>>
-<</if>>
-
-[[Return|shop]]
 
 
-:: buylure
-A handcrafted lure, coming right up.
-<<set $fishlure =true>>
-
-[[Return|shop]]
 
 
 :: osnav
-<<type 40ms>>What else can I help you with?<</type>>
-<u>[[I'm looking for my father|os3a]]</u>
+<<type 40ms>>@@.npcdialogue;"What else can I help you with?"@@<</type>>
 
-<u>[[What is this place?|os4a]]</u>
-
-<u>[[Can I buy something?|shop]]</u>
-
-<u>[[Just browsing|os5a]]</u>
-
-<u>[[I should get going (head towards town)|gondola]]</u>
+@@.pcdialogue;<u>[[1. "I'm looking for my father."|os3a]]</u>
+<u>[[2. "What is this place?"|os4a]]</u>
+<u>[[3. "Just browsing."|os5a]]</u>
+<u>[[4. "I should get going."" (head towards town)|gondola]]</u>@@
 
 
 :: saxtext
-<<type 40ms>>Welcome back! What can I help you with?<</type>>
-<u>[[I'm looking for my father|os3a]]</u>
+<<type 40ms>>@@.npcdialogue;"Welcome back! What can I help you with?"@@<</type>>
 
-<u>[[What is this place?|os4a]]</u>
-
-<u>[[Can I buy something?|shop]]</u>
-
-<u>[[Just browsing|os5a]]</u>
-
-<u>[[I should get going (head towards town)|gondola]]</u>
+@@.pcdialogue;<u>[[1. "I'm looking for my father."|os3a]]</u>
+<u>[[2. "What is this place?"|os4a]]</u>
+<u>[[3. "Just browsing."|os5a]]</u>
+<u>[[4. "I should get going." (head towards town)|gondola]]</u>@@

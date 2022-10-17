@@ -1,0 +1,110 @@
+:: tomother
+@@.env;The early signs of dusk can be seen forming on the horizon by the time I get down to the docks.
+
+Langley gave me permission to pilot his small skiff over to the island. 
+
+The tiny engine takes many tries to warm up.@@
+
+<u>[[Continue|tomother2]]</u>
+
+:: tomother2
+@@.env;It occurs to me how little I've reflected on what I'm doing here.
+
+How much of me really thought I would find him here?
+
+The freezing water splashes into the boat with each passing wave. 
+
+How much of me thought I would find anything?
+
+It seems awfully silly, now that I think about it.
+
+The water seems to darken in an instant.@@
+
+<u>[[Continue|tomother3]]</u>
+
+:: tomother3
+@@.env;My parents look so young in the photo. 
+
+I realize how little I recognize the faces that peer back at me. 
+
+To tell myself that I know who these people are, these kids, would be a lie.
+
+The massive shadow beneath me grows larger by the minute.@@
+
+<u>[[Continue|tomother4]]</u>
+
+:: tomother4
+@@.env;As the skiff approaches the small island, the view of the whale is almost too much to take in.
+
+A few yards ahead, a stream of water explodes into the air.
+
+The shadow dissapates.
+
+I cannot stop myself from shaking.
+
+It's collosal tale penetrates the sky, ocean water raining down from its sides.
+
+In an instant, it is gone.
+
+I hardly notice that the skiff has made contact with the shoreline.@@
+
+<u>[[Step out|stepout]]</u>
+
+:: stepout
+@@.env;Standing on solid ground does nothing to stop the shaking.
+
+I peer out across the vast ocean landscape; terrified, awestruck.
+
+The lighthouse reaches towards the clouds above me.
+
+I take a seat at the shrine Langley had mentioned- 
+benches arranged in concentric rings around a statue.
+
+It's easy to say that I'm here looking for my father, but its not that simple.
+
+The silence, save for the slight sound of waves pushing against the shore, is all-consuming.
+
+For the first time since mom's death, I start to cry.@@
+
+<u>[[Continue|tomotherend]]</u>
+
+:: tomotherend
+@@.env;My parents look so young in the photo. 
+
+I realize how little I recognize the faces that peer back at me. 
+
+To tell myself that I know who these people are, these kids, would be a lie.@@
+
+
+Thank you for playing Trout's Mouth Landing.
+
+
+
+:: nogo
+@@.env;The early signs of dusk can be seen forming on the horizon by the time I get down to the docks.
+
+Stepping back on to the ferry, I feel nauseous.
+
+It occurs to me how little I've reflected on what I'm doing here.
+
+How much of me really thought I would find him here?
+
+My eyes focus on a crane at the Royal Merchant dockyard in the distance.
+
+Its massive cable swings, ever so slightly, with the evening breeze.
+
+For the first time since mom's death, I start to cry.@@
+
+<u>[[Continue|nogo2]]</u>
+
+:: nogo2
+@@.env;My parents look so young in the photo. 
+
+I realize how little I recognize the faces that peer back at me. 
+
+To tell myself that I know who these people are, these kids, would be a lie.
+
+As the ferry leaves the docks, the view of Trout's Mouth Landing is almost too much to take in.@@
+
+
+Thank you for playing Trout's Mouth Landing.

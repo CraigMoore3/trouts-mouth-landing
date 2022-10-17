@@ -1,50 +1,51 @@
 :: hammondinit
-The interior of the bar is very dark. Save for a few small windows,
+@@.env;The interior of the bar is very dark. Save for a few small windows,
 the only light in the space is sourced from archaic neon and incandescent bulbs above the bar and tables.
 
-A man in old Royal Navy trousers and a stained undershirt is asleep at one of the booths.
+A man in old Royal Navy trousers and a stained undershirt is asleep at one of the booths.@@
+<<if $map>>
+<<else>>
+@@.env;A <u>[[framed map|map]]</u> of Trout's Mouth Landing hangs on the wall.@@
+<</if>>
+<<linkreplace <u>Continue</u> >>\
+@@.env;A muffled voice yells from behind a wall:@@
+<<type 55ms>>@@.npcdialogue;BAR'S CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT@@<</type>>
 
-<<linkreplace "Continue">>
-A muffled voice yells from behind a wall:
-<<type 55ms>>BAR'S CLOSED, LEE! TILL 4! HOW MANY GOTDAMN TIMES I GOTTA SAY IT<</type>>
-
-[[Sorry, sir, but I was hoping you could help me!|sorryhammond]]
-[[Say nothing|ghost]]
-[[OKAY! (leave)|downtownre]]
+@@.pcdialogue;[["Sorry, sir! I was hoping you could help me!"|sorryhammond]]@@
+<u>[[Say nothing|ghost]]</u>
+@@.pcdialogue;[["OKAY!" (leave)|downtownre]]@@
 <</linkreplace>>
 
 
 
 :: sorryhammond
-Sorry, sir, but I was hoping you could help me!
+@@.pcprintd;"Sorry, sir, but I was hoping you could help me!"@@
 
-For a momment, there is only silence. Then, a low groaning.
+@@.env;For a momment, there is only silence. Then, a low groaning.@@
 
-<<type 30ms>>Aggh! Okay. Keep your shirt on, I'm coming out.<</type>>
+<<type 30ms>>@@.npcdialogue;"Aggh! Okay. Keep your shirt on, I'm coming out."@@<</type>>
 
-[[Continue|sorryhammond2]]
+<u>[[Continue|sorryhammond2]]</u>
 
 :: sorryhammond2
-A swinging door pops open, revealing a haggerd looking man with a slouch, somewhere between the age of twenty-five and seventy.
+@@.env;A swinging door pops open, revealing a haggerd looking man with a slouch, somewhere between the age of twenty-five and seventy.
 
-The years have not been kind to him, although what he lacks in beauty is more than made up for by an indescribable air of wisdom.
+The years have not been kind to him, although what he lacks in beauty is more than made up for by an indescribable air of wisdom.@@
 
-@@.npctext;It's clear that this guy has seen some things.@@
-
-<<timed 1s>><<type 40ms>>Oh... Welcome, stranger. Can't say I was expecting a new face. What can I do for you?"<</type>>
+<<timed 1s>><<type 40ms>>@@.npcdialogue;"Oh... Welcome, stranger. Can't say I was expecting a new face. What can I do for you?"@@<</type>>
 
 <<if $knowhammonds>>
-[[Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me.|langhelp|]]
-[[I'm sorry, are you closed?|uclosed]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["Sorry to bother you, Langely. I was talking with Oswald and he thought you might be able to help me."|langhelp|]]
+[["I'm sorry, are you closed?"|uclosed]]
+[["Where is everyone?"|whereseveryone]]
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <<else>>
-[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
-[[I'm sorry, are you closed?|uclosed]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[["I'm sorry, are you closed?"|uclosed]]
+[["Where is everyone?"|whereseveryone]]
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <</if>>
 
 <</timed>>
@@ -53,97 +54,241 @@ The years have not been kind to him, although what he lacks in beauty is more th
 :: ghost
 @@.env;I stand in the doorway, silently.@@
 
-<<timed 1s t8n>><<type 40ms>>MOTHER'S SAKE, LEE! YOU TURNED DEAF <em>AND</em> DUMB?<</type>><</timed>>
+<<timed 1s t8n>><<type 40ms>>@@.npcdialogue;"MOTHER'S SAKE, LEE! YOU TURNED DEAF <em>AND</em> DUMB?"@@<</type>><</timed>>
 
-<<timed 2s t8n>>I can hear the man fumbling around in the back before he explodes through a swinging door.<</timed>>
+<<timed 2s t8n>>@@.env;I can hear the man fumbling around in the back before he explodes through a swinging door.@@<</timed>>
 
-<<timed 3s t8n>><<type 40ms>>WHAT'S A MATTER WITH- oh... I'm sorry fella... I thought you were- anywho...
-Hello! Name's Hammond. Langely Hammond. What can I do for you?<</type>>
+<<timed 3s t8n>><<type 40ms>>@@.npcdialogue;"WHAT'S A MATTER WITH- oh... I'm sorry fella... I thought you were- anywho...
+Hello! Name's Hammond. Langely Hammond. What can I do for you?"@@<</type>>
 
 <<if $knowhammonds>>
-[[Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me|langhelp]]
-[[Are you closed?|uclosed]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["Hello, Langley. Sorry to bother you. I was talking with Oswald and he thought you might be able to help me."|langhelp]]
+[["Are you closed?"|uclosed]]
+[["Where is everyone?"|whereseveryone]]
 
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <<else>>
-[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
-[[I'm sorry, are you closed?|uclosed]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[["I'm sorry, are you closed?"|uclosed]]
+[["Where is everyone?"|whereseveryone]]
 
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <</if>>
 <</timed>>
 
 :: langhelp
-@@.pcprintd;Sorry to bother you. I was talking with Oswald and he thought you might be able to help me.@@
+@@.pcprintd;"Sorry to bother you. I was talking with Oswald and he thought you might be able to help me."@@
 
-The man smiles at me, his eyes welcoming.
+@@.env;The man smiles at me, his eyes welcoming.@@
 
-Oswald! He's good people. Any friend of his is a friend of mine...
-What seems to be the issue?
+<<type 40ms>>@@.npcdialogue;Oswald! He's good people. Any friend of his is a friend of mine...
+What seems to be the issue?@@<</type>>
 
-[[I'm looking for my father.]]
-[[]]
+@@.pcdialogue;[["I'm looking for my father."|langhelpelse]]@@
 
-
-[[I should get going.|downtownre]]
 
 :: langhelpelse
-@@.pcprintd;I'm looking for my father. I was hoping you might be able to help.@@
+@@.pcprintd;"I'm looking for my father. I was hoping you might be able to help."@@
 
-The man peers at me with a solemn intensity.
+@@.env;The man peers at me with a solemn intensity.@@
 
-I see... How come you're looking for him in Trout's Mouth? Not a lot happening round here these days...
+<<type 40ms>>@@.npcdialogue:"I see... How come you're looking for him in Trout's Mouth? Not a lot happening round here these days..."@@<</type>>
 
-[[He used to be a sailor for the Royal Merhcants. He talked about this place a lot.]]
-[[I'm starting to notice that...]]
+@@.pcdialogue;[["He used to be a sailor for the Royal Merhcants. He talked about this place a lot."|usedtobe]]
+[["I'm starting to notice that..."|noticethat]]@@
 
-
-[[I should get going.|downtownre]]
 
 :: uclosed
-@@.pcprintd;Are you closed?@@
+@@.pcprintd;"Are you closed?"@@
 
-No, no! Come in, make yourself at home. Only said that cause I thought you were one of them daydrinking types. 
+<<type 40ms>>@@.npcdialogue;"No, no! Come in, make yourself at home. Only said that cause I thought you were one of them daydrinking types."@@<</type>>
 
-He motions towards the man sleeping at the booth.
+@@.env;He motions towards the man sleeping at the booth.@@
 
-Don't like opening the daycare till the sun goes down if I can help it. 
-Anyways, what brings you in? Can't say I'm particularly used to new faces.
+<<timed 1s>><<type 40ms>>@@.npcdialogue;"Don't like opening the daycare till the sun goes down if I can help it. 
+Anyways, what brings you in? Can't say I'm particularly used to new faces."@@<</type>>
 
 <<if $knowhammonds>>
-[[I was talking with Oswald and he thought you might be able to help me|langhelp]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["I was talking with Oswald and he thought you might be able to help me"|langhelp]]
+[["Where is everyone?"|whereseveryone]]@@
 
-
-[[I should get going.|downtownre]]
 <<else>>
-[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
-[[Where is everyone?|whereseveryone]]
+@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
+[["Where is everyone?"|whereseveryone]]@@
 
-
-[[I should get going.|downtownre]]
 <</if>>
-
+<</timed>>
 
 
 :: whereseveryone
-@@.pcprintd;Where is everyone?@@
+@@.pcprintd;"Where is everyone?"@@
 
-Ha!! Son, I hate to say it, but this <em>is</em> everyone. 
-It ain't hard to tell you're new around here... Can I help you with something?
+<<type 40ms>>@@.npcdialogue;Ha!! Son, I hate to say it, but this <em>is</em> everyone. 
+It ain't hard to tell you're new around here... Can I help you with something?@@<</type>>
 
 <<if $knowhammonds>>
-[[I was talking with Oswald and he thought you might be able to help me|langhelp]]
+@@.pcdialogue;[["I was talking with Oswald and he thought you might be able to help me"|langhelp]]
 
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <<else>>
-[[I'm looking for my father. I was hoping you might be able to help.|langhelpelse]]
+@@.pcdialogue;[["I'm looking for my father. I was hoping you might be able to help."|langhelpelse]]
 
 
-[[I should get going.|downtownre]]
+[["I should get going."|downtownre]]@@
 <</if>>
+
+:: noticethat
+@@.pcprintd;"I'm starting to notice that..."@@
+
+<<type 40ms>>@@.npcdialogue;"It's a sad thing, innit? Shes as beautiful a place as any...
+Can't say youre the first to come through here hoping to find someone."
+
+<<timed 1s>>"Trout's Mouth isn't usually too kind to the closure-seeking folks."@@<</type>>
+
+@@.env;He pauses for a momment, contimplating his next question.@@
+
+<<type 40ms>>@@.npcdialogue;"Would you call yourself superstitious?"@@<</type>>
+
+@@.pcdialogue;[["Yes."|yessuper]]
+[["No."|nosuper]]
+[["Why?"|whysuper]]@@
+<</timed>>
+
+
+:: usedtobe
+@@.pcprintd;"He used to be a sailor for the Royal Merhcants. He talked about this place a lot."@@
+
+<<type 40ms>>@@.npcdialogue;"Hmmm... As much as it pains me to say it, your pa ain't here, kid. 
+Not unless you're related to old Burgess over there..."@@<</type>>
+
+<<timed 1s>>@@.env;He motions at the sleeping drunk.@@
+
+<<type 40ms>>@@.npcdialogue;"He says he was a sailor, I think he just likes the uniform..."@@<</type>>
+
+@@.pcdialogue;[["Are you sure you haven't seen him?" (Show photograph)|yousure]]
+[["Yeah... You're probably right."|youreright]]@@
+<</timed>>
+
+:: yousure
+@@.pcprintd;"Are you sure you haven't seen him?"@@
+
+@@.env;He examines the photograph for a momment.@@
+
+<<type 40ms>>@@.npcdialogue;"Like I said before, he isn't in Trout's Mouth. Not now anyways...
+
+If I have seen em, it had to have been at least a decade ago. 
+Folks like him don't come through often...
+
+I'm sorry, son. I can tell this means a lot to you."@@<</type>>
+
+@@.pcdialogue;[["That's alright. I'm sorry I bothered you."|defeatedapology]]@@
+
+
+:: youreright
+@@.pcprintd;"Yeah... You're probably right."@@
+
+<<type 40ms>>@@.npcdialogue;"I'm sorry, kid. I can tell this means a lot to you."@@<</type>>
+
+<<timed 40ms>>@@.env;He waivers for a momment. This isn't the first time he's had this conversation.@@
+
+<<type 40ms>>@@.npcdialogue;"Pardon my asking, but would you consider yourself superstitious?"@@<</type>>
+
+@@.pcdialogue;[["Yes."|yessuper]]
+[["No."|nosuper]]
+[["Why?"|whysuper]]@@
+<</timed>>
+
+:: defeatedapology
+@@.pcprintd;"Alright. I'm sorry I bothered you."@@
+
+<<type 40ms>>@@.npcdialogue;"Son, let me be the first to apologize.
+Trout's Mouth isn't kind to the closure-seeking type.
+To tell you the truth, you're hardly the first to come through those doors askin those questions.
+
+I hate turning you down outright, so let me ask you:
+Would you consider yourself to be superstituous?"@@<</type>>
+
+@@.pcdialogue;[["Yes."|yessuper]]
+[["No."|nosuper]]
+[["Why?"|whysuper]]@@
+
+:: whysuper
+@@.pcprintd;"Why?"@@
+
+<<type 40ms>>@@.npcdialogue;"Well, here in Trout's Mouth some of us share a belief that this place is special.
+Most of us who stayed are still here for that very reason. We're here because of The Mother.
+
+I think, as long as you'd like to believe in that sort of stuff, that I might be able to help you.
+
+What do you think?"@@<</type>>
+
+@@.pcdialogue;[["Yes."|yessuper]]
+[["No."|nosuper]]@@
+
+:: yessuper
+@@.pcprintd;"Yes."@@
+
+<<type 40ms>>@@.npcdialogue;"I knew you were gonna be an interesting fellow the momment I saw you.
+Here's why I ask. Here in Trout's Mouth we have a sort of ritual. 
+Whenever someone is searching for something they can't seem to get a grasp on, 
+we like to sail over to that island with the lighthouse."@@<</type>>
+
+<<linkreplace <u>Continue</u> >><<type 40ms>>@@.npcdialogue;"It probably seems silly now, but the trip has a way of bringing some sort of peace.
+Some folks say that being up there on top of the lighthouse makes it easier to see what's around them.
+I'm afraid of heights, so I usually stick around The Mother Shrine. Talking to her always seems to make me feel better.
+
+If you think you might be interested, I'll give you a sweet deal on a room for when you get back. 
+Ferry will have left till the morning if you go."@@<</type>>
+
+@@.pcdialogue;[["That sounds great. Let's do it."|tomother]]
+[["I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@<</linkreplace>>
+
+
+:: nosuper
+@@.pcprintd;"No."@@
+
+<<type 40ms>>@@.npcdialogue;"No problem, friend. Didn't want to assume nothin."@@<</type>>
+
+<<linkreplace <u>Continue</u> >><<type 40ms>>@@.npcdialogue;Well, the way I see it, its still early. 
+I'd offer you a room, but I can't imagine you want to stick around.
+You've got plenty of time to take in the sights before the ferry heads back out for the night.
+Care for a drink?"@@
+
+@@.pcdialogue;[[I"'d love a drink."|lastdrink]]
+[["No, thanks. I should head back to the ferry."|nogo]]@@
+<</linkreplace>>
+
+:: lastdrink
+@@.pcprintd;"I'd love a drink."@@
+
+@@.env;He pours two mugs of ale, offering a toast.@@
+
+<<timed 1s>><<type 40ms>>@@.npcdialogue;"To life's mysteries, and the world's utter contempt for solving them!"@@<</type>>
+
+@@.env;You drink together. The hospitality makes you feel vulnerable.@@
+
+@@.pcdialogue;[["On second thought, I just might be feeling supersitious."|whatifyessuper]]
+[["Thanks, Langley. I should head back to the ferry."|nogo]]@@
+<</timed>>
+
+:: whatifyessuper
+@@.pcprintd;"On second thought, I just might be feeling supersitious."@@
+
+
+<<type 40ms>>@@.npcdialogue;"I knew you were gonna be an interesting fellow the momment I saw you.
+Here's why I asked in the first place. Here in Trout's Mouth we have a sort of ritual. 
+Whenever someone is searching for something they can't seem to get a grasp on, 
+we like to sail over to that island with the lighthouse."@@<</type>>
+
+<<linkreplace <u>Continue</u> >><<type 40ms>>@@.npcdialogue;"It probably seems silly now, but the trip has a way of bringing some sort of peace.
+Some folks say that being up there on top of the lighthouse makes it easier to see what's around them.
+I'm afraid of heights, so I usually stick around The Mother Shrine. Talking to her always seems to make me feel better.
+
+If you think you might be interested, I'll give you a sweet deal on a room for when you get back. 
+Ferry will have left till the morning if you go."@@<</type>>
+
+@@.pcdialogue;[["That sounds great. Let's do it."|tomother]]
+[["I don't think that's for me. I should probably catch the ferry tonight."|nogo]]@@<</linkreplace>>

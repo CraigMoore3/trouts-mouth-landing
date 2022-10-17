@@ -32,7 +32,7 @@ It is surprising to see someone so animated in such a frail body.@@
 
 <<type 40ms>>@@.npcdialogue;“Careful now, boy. I’ve fought plenty of men in my day (murmuring) I’m not afraid of dishing out a couple bruises for breakfast if you catch my drift.”@@<</type>> 
 \
-@@.pcdialogue;[[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]@@
+[[1. "I don't mean any trouble, sir. I was hoping to catch a ride up into town."|gondolakind]]
 [[2. "I've come to deul, old man. Turn yourself in or suffer the consequences."|gondolajoke1]]
 <</timed>>
 
@@ -128,8 +128,7 @@ In less time than I had anticipated, the cable car slows to a halt.@@
 :: dockre
 <u>[[1. Check out the fishing shop|saxtext]]
 [[2. Go back to the ferry dock|dockdesc]]
-[[3. Head down to the beach|beach]]
-[[4. Take the gondola to town|gondolaride]]</u>
+[[3. Take the gondola to town|gondolaride]]</u>
 
 :: gondoladown
 @@.env;Approaching the sleeping man at the booth, I dread waking another sea dog from his slumber.
@@ -142,15 +141,5 @@ Fortunately, he seems to have roused himself.@@
 [[2. "Actually, I need to do something else in town."|downtownre]]@@
 <</linkreplace>>
 
-:: beach
-<<if $beachpermission>>
-@@.env;You're at the beach!@@
-<<else>>
-@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
-
-The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
-
-<u>[[Return|dockre]]</u>
-<</if>>
 
 

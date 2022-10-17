@@ -23,6 +23,7 @@ Trout's Mouth Landing
 <<set $fishlure = false>>
 <<set $spyglass = false>>
 
+
 :: Start
 
 @@.env;My parents look so young in the photo. 
@@ -52,8 +53,7 @@ In the far distance I can see a pair of gondolas creeping up towards a cliffside
 Ahead, on my left, are some steps that stretch in the direction of the rocky beach.@@
 
 <u>[[1. Head towards town|totown]]
-[[2. Try the steps to the beach.|nochancebeach]]
-[[3. What else is there?|dockdesc2]]</u>
+[[2.. What else is there?|dockdesc2]]</u>
 
 :: dockdesc2
 
@@ -71,12 +71,7 @@ Not without a reason.@@
 
 <u>[[Head towards town|totown]]</u>
 
-:: nochancebeach
-@@.env;At this time of day, the tide is high enough to cover the bottom third of the stairs. 
 
-The sight of stairs leading to a watery nothingness sends a chill down your spine.@@
-
-<u>[[Return|dockdesc]]</u>
 
 
 
